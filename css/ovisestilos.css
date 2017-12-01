@@ -2373,7 +2373,8 @@ ol {
     font-size: 2rem;
     line-height: 2.5rem;
     font-family: "Agency FB";
-    padding-left: 18rem;
+    margin-left: 18rem;
+    padding-left: 0rem;
     padding-top: 1rem;
     -webkit-animation: inicio-sub 1s ease-in-out;
     animation: inicio-sub 1s ease-in-out;
