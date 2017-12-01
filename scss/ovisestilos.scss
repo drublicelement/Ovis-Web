@@ -1,959 +1,963 @@
 //---------------------------------------
 // COLORES WEB
 //---------------------------------------
-
-
 //
 $fondo:#111111;
-$texto:#111111;
+$texto:#000000;
 $hover:#EDDA84;
 $texto2:#ffffff;
 $general:#E8BB00;
 $servicios:#1F1F1F;
 $nav:#E9BC00;
 $linea:#ffffff;
-$ini-pad-top:20rem;//padding-top de los textos .bienvenidos .inicio1
+$ini-pad-top:20rem; //padding-top de los textos .bienvenidos .inicio1
 $ini-pad-left:10rem;
 
 
-   @font-face {
-      font-family: "Helvetica LT Std";
-      src: url(../fonts/HelveticaLTStd-Roman.ttf) format("truetype");
-       
-       font-family: "Agency FB";
-      src: url(../fonts/AGENCYB.ttf) format("truetype");
-       
-       font-family: "Gill Sans MT";
-      src: url(../fonts/GIL.ttf) format("truetype");
-    }
+
+.dipper{
+    
+    background-color: red !important;
+}
+
+.dipper2{
+    
+    //background-color: blue;
+}
+@font-face {
+    font-family: "Helvetica LT Std";
+    src: url(../fonts/HelveticaLTStd-Roman.ttf) format("truetype");
+
+    font-family: "Agency FB";
+    src: url(../fonts/AGENCYB.ttf) format("truetype");
+
+    font-family: "Gill Sans MT";
+    src: url(../fonts/GIL.ttf) format("truetype");
+}
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     max-width: 100%;
     font-weight: 100;
     
+   
+
 }
 
-html{
+html {
     font-size: 15px;
+   
 }
 
-body{
-    
+body {
+      
     font-family: 'Open Sans', sans-serif;
     color: $texto;
+    
 }
 
 
 .container-fluid {
-  padding-right: 0;
-  padding-left: 0;
+    padding-right: 0;
+    padding-left: 0;
 
 }
 
-//estilos de paginacion que hacemos con fondo negro
-.fondo{
-     width: 4rem;
-    height: 4rem;
-    line-height: 4rem;
-    border-radius: 50%;
-    background-color: #000000;
-}
-//color del activde de paginacion que hacemos
-.active{
-   
-    background-color: #F7BC03;
+
+
+
+.bienvenidos {
+     
+    height: 100vh;
+    overflow: hidden;
+     
+    
 }
 
-
-
-
-.bienvenidos{
-    height: 100vh;    
+.bienvenidos a .prov {
+    width: 100%;
+    height: auto;
+    
+}
+.bienvenidos .carousel-inner {
+    width: 100vw;
+    background-color:$general;
+    height: 100vh;
 }
 
-.bienvenidos .carousel-inner img{
+
+.bienvenidos .carousel-inner img {
     width: 100vw;
     height: 100vh;
 }
-.bienvenidos .slideshow{
-  position: relative;
+
+.bienvenidos .slideshow {
+    position: relative;
     width: 100%;
-    
+
 }
-.bienvenidos ul,ol{
+
+.bienvenidos ul,
+ol {
     list-style: none;
-   
+
 }
+
 
 //---------------------------------------
 // partes del slider inicio1,inicio2,inicio3,inicio4,inicio5,inicio6
 //---------------------------------------
 
+.bienvenidos .inicio1 {
+    position: relative;
+    z-index: 9999;
+    width: 100%;
+    height: 80vh;   
+}
 
-.bienvenidos .inicio1{
-    background: url(../images/slider-inicio-img1.png);
+//animacion de flecha negra de arriba hacia abajo
+.bienvenidos .inicio1:after {
+    content: '';
+    position: absolute;
+    top:-100%;
+    left:0;
+    z-index: 1;
+    width: 100%;
+    height: 80vh;
+    background: url(../images/slider1-flecha.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 70vw;
-    height: 80vh;
-    color: $texto2;
-    font-size: 3rem;
-    font-family: "Agency FB";
+    animation: flechaabajo 1.5s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes flechaabajo {
+
+   from{
+       
+    top:-100%;
+    }
+    to {
+    top:0;
+        
+    }
+}
+
+
+
+
+
+.bienvenidos .inicio1 h1{
     position: relative;
+    right: -100%;
+  color: #ffffff;
+  font-family: "Agency FB";
+    font-size: 6.3rem;
+    font-weight: 100;
+    margin-top: 19rem;
+    animation: inicio-sub 1s ease-in-out;
+    animation-fill-mode: forwards;
     z-index: 9999;
+}
+.bienvenidos .inicio1 .ini-iconos{
+    justify-content: center;
+    position: relative;
+    z-index: 6;
+    display: flex;
+    top:2rem;
+    width:auto;
+    height: auto;
+}
+.bienvenidos .inicio1 .ini-iconos li{
+    
+    
+}
+.bienvenidos .inicio1 .ini-iconos li img{
+    height:3rem;
+    width:3rem;
+   
+    border-radius: 50%;
     
 }
 
-.bienvenidos .inicio2{
+.bienvenidos .inicio1 .ini-iconos .iz1,
+.bienvenidos .inicio1 .ini-iconos .iz2,
+.bienvenidos .inicio1 .ini-iconos .iz3,
+.bienvenidos .inicio1 .ini-iconos .iz4,
+.bienvenidos .inicio1 .ini-iconos .iz5,
+.bienvenidos .inicio1 .ini-iconos .iz6{
+    position: relative;
+    z-index: 7;
+height: 3rem;
+    width: 3rem;
+    background-color: #ffffff;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+    
+    
+    .bienvenidos .inicio1 .ini-iconos .iz1{
+      animation: iconos 2s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes iconos {
+
+   from{
+       border-bottom:none;
+      left:-80%; 
+    }
+    to {
+        left:0%;
+        
+    }
+}
+    .bienvenidos .inicio1 .ini-iconos .iz2{
+      animation: iconos2 1.7s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes iconos2 {
+
+   from{
+       border-bottom:none;
+      left:-80%; 
+    }
+    to {
+        left:0%;
+        
+    }
+}
+
+    .bienvenidos .inicio1 .ini-iconos .iz3{
+      animation: iconos3 1.4s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes iconos3 {
+
+   from{
+       border-bottom:none;
+      left:-80%; 
+    }
+    to {
+        left:0%;
+        
+    }
+}
+    .bienvenidos .inicio1 .ini-iconos .iz4{
+      animation: iconos4 1.1s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes iconos4 {
+
+   from{
+       border-bottom:none;
+      left:-80%; 
+    }
+    to {
+        left:0%;
+        
+    }
+}
+
+ .bienvenidos .inicio1 .ini-iconos .iz5{
+      animation: iconos5 0.8s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes iconos5 {
+
+   from{
+       border-bottom:none;
+      left:-80%; 
+    }
+    to {
+        left:0%;
+        
+    }
+}
+
+
+ .bienvenidos .inicio1 .ini-iconos .iz6{
+      animation: iconos6 0.5s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes iconos6 {
+
+   from{
+       border-bottom:none;
+      left:-80%; 
+    }
+    to {
+        left:0%;
+        
+    }
+}
+
+
+
+@keyframes inicio-sub {
+
+   from {
+       
+        right: -100%;
+    }
+    to {
+         
+        right: 0%;
+        
+        
+    }
+}
+
+.bienvenidos .inicio1 h2{
+    position: relative;
+    left:-100%;
+  color: #E9BC00;
+  font-family: "Agency FB";
+    font-size: 7rem;
+    font-weight: 800;
+    margin-top: -2.5rem;
+    margin-left: 6rem;
+    animation: inicio-1 1s ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 9999;
+}
+
+@keyframes inicio-1 {
+
+   from {
+       
+        left: -100%;
+    }
+    to {
+         
+        left: 0%;
+        
+        
+    }
+}
+
+.bienvenidos .inicio1 h2:after{
+     width: 100%;
+    content: '';
+    top:106%;
+    left:-300%;
+    position:absolute;
+    border-bottom: 4px solid $general;
+    
+    animation: linea-inicio 1.5s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes linea-inicio {
+
+   0% {
+       border-bottom:none;
+      left:-80%; 
+    }
+    
+    50% {
+        border-bottom:none;
+        left:-80%;
+        
+    }
+    100% {
+        left:-20%;
+        
+    }
+}
+
+
+
+
+.bienvenidos .inicio2 {
     width: 100%;
-    height:auto;
+    height: auto;
     color: white;
     position: relative;
     z-index: 9999;
     padding-top: $ini-pad-top;
 }
+
 //factores de exito con h1
-.carousel h1{
+.carousel h1 {
+    position: relative;
     color: $texto;
     font-size: 8rem;
     font-weight: 800;
     font-family: "Agency FB";
     padding-left: 6rem;
 }
+.carousel h1 .fa {
+   font-size: 4.8rem;
+}
 
-.carousel .clave-exito{
-                
-     color: $texto2;
+.carousel .clave-exito {
+    position: relative;
+    right: -100%;
+    color: $texto2;
     text-align: justify;
     width: 100%;
-    margin:-3rem;
+    margin: -3rem;
     font-size: 6rem;
     font-family: "Agency FB";
     padding-left: 17rem;
+    animation: clave-exito 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes clave-exito {
+
+   from {
+       
+        right: -100%;
+    }
+    to {
+         
+        right: 0%;
+        
+        
+    }
+}
+
+
+
+//resto de sliders con h2
+.carousel .h2-slider3 {
+    color: $texto;
+    font-size: 8rem;
+    font-weight: 800;
+    font-family: "Agency FB";
+    padding-left: 15rem;
     
     
 }
-//resto de sliders con h2
-.carousel h2{
+.carousel .h2-slider3:after,
+.carousel .h2-slider4:after,
+.carousel .h2-slider5:after,
+.carousel .h2-slider6:after{
+    width: 60%;
+    content: '';
+    top:70%;
+    left:-100%;
+    position:absolute;
+    border-bottom: 2px solid #ffffff;
+    
+    animation: linea 3s ease;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+@keyframes linea {
+
+   0% {
+       
+      left:-100%; 
+    }
+    
+    100% {
+        left:0%;
+        
+    }
+}
+.carousel .h2-slider4 {
     color: $texto;
     font-size: 8rem;
     font-weight: 800;
     font-family: "Agency FB";
     padding-left: 15rem;
 }
+.carousel .h2-slider4:after {
+    width: 62%;
+    content: '';
+    top:70%;
+    left: 0;
+    position:absolute;
+    border-bottom: 2px solid #ffffff;
+}
 
-.carousel .inicio-subtitulo{
+.carousel .h2-slider5 {
+    color: $texto;
+    font-size: 8rem;
+    font-weight: 800;
+    font-family: "Agency FB";
+    padding-left: 15rem;
+}
+.carousel .h2-slider5:after {
+    width: 69%;
+    content: '';
+    top:70%;
+    left: 0;
+    position:absolute;
+    border-bottom: 2px solid #ffffff;
+}
+.carousel .h2-slider6 {
+    color: $texto;
+    font-size: 8rem;
+    font-weight: 800;
+    font-family: "Agency FB";
+    padding-left: 15rem;
+}
+.carousel .h2-slider6:after {
+    width: 68%;
+    content: '';
+    top:70%;
+    left: 0;
+    position:absolute;
+    border-bottom: 2px solid #ffffff;
+}
+.carousel .inicio-subtitulo {
+    position: relative;
+    right: -100%;
     width: 100%;
-     color: $texto2;
+    color: $texto2;
     font-size: 5rem;
-    line-height:5rem;
+    line-height: 5rem;
     font-family: "Agency FB";
     padding-left: 18rem;
+    padding-top: 1.5rem;
+    animation: inicio-sub 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes inicio-sub {
+
+   from {
+       
+        right: -100%;
+    }
+    to {
+         
+        right: 0%;
+        
+        
+    }
 }
 
 
 
-.bienvenidos .inicio3{
+.bienvenidos .inicio3 {
     width: 100%;
-    height:auto;
+    height: auto;
     color: white;
     position: relative;
     z-index: 9999;
-    padding-top: $ini-pad-top; 
+    padding-top: $ini-pad-top;
 }
-
-.carousel hr {
-    border-bottom: 4px solid $linea ;
-    width: 92%;
-}
-
-
 
 
 
 //---------------------------------------
 // primer slider
 //---------------------------------------
+.bienvenidos .slider1 {
 
 
-
-.bienvenidos .slider1{
-
-    
     position: relative;
     width: 100vw;
     height: 100vh;
-     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: aqua;
-	background: white;
-	padding-bottom:20px;
-	max-width: 100%;
-	overflow: hidden;
-    
+       
+    max-width: 100%;
+    overflow: hidden;
+
 }
 
 
 
-	.bienvenidos .slider1:after{
-	content: '';
-	position: absolute;
-	width: 140vw;
-	height: 100vh;
-    		  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top:0;
-	animation:bienvenidos2 0.5s ease-in;
-	animation-fill-mode: forwards;
-	overflow: hidden;
-        z-index: 1;
-}
-
-	@keyframes bienvenidos2{
-
-		0%{
-			background-image:  url(../images/slider-bievenidos1a.png);
-					  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-            top: -40%;
-			right:100%;
-		}
-		100%{
-            top: 0%;
-			right: -40%;
-					  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-			background-image:  url(../images/slider-bievenidos1a.png);
-			
-		}
-	}
-
-
-.bienvenidos .slider1:before{
-	content: '';
-	position: absolute;
-	width: 100vw;
-	height: 100vh;
-    		  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-image: url(../images/slider-bievenidos1b.png);
-	animation:bienvenidos1 2s ease;
-	animation-fill-mode: forwards;
+.bienvenidos .slider1:after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/slider-bienvenidos1.png);
+    top: 0;
+    animation: bienvenidos1 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    overflow: hidden;
     z-index: 1;
 }
 
-	@keyframes bienvenidos1{
+@keyframes bienvenidos1 {
 
-		0%{
-			/*background-repeat: no-repeat;
-			background-image: url(home-2.png);*/
-			right:0%;
-			opacity: 0;
-		}
-		20%{
-			right: 0%;
-			opacity: 0;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/
-		}
-			40%{
-			right: 0%;
-			opacity: 0;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/	
-		}
-			100%{
-			right: 0%;
-			opacity: 1;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/	
-		}
-	}
-
-
-
+   from {
+       
+        right: 0%;
+        opacity: 0;
+    }
+    to {
+         background-image: url(../images/slider-bienvenidos1.png);
+        right: 0%;
+        opacity: 1;
+        
+    }
+}
 
 
 //---------------------------------------
 // segundo slider
 //---------------------------------------
+.bienvenidos .slider2 {
 
 
-
-
-.bienvenidos .slider2{
-
-    
     position: relative;
     width: 100vw;
     height: 100vh;
-     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: aqua;
-	background: white;
-	padding-bottom:20px;
-	max-width: 100%;
-	overflow: hidden;
-    
-}
-
-
-
-	.bienvenidos .slider2:after{
-	content: '';
-	position: absolute;
-	width: 140vw;
-	height: 100vh;
-    		  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	top:0;
-	animation:bienvenidos2b 0.5s ease-in;
-	animation-fill-mode: forwards;
-	overflow: hidden;
-        z-index: 1;
-}
-
-	@keyframes bienvenidos2b{
-
-		0%{
-			background-image:  url(../images/slider-bievenidos2a.png);
-			  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-             top: -40%;
-			right:100%;
-		}
-		100%{
-             top:0%;
-			right: -40%;
-			  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-			background-image:  url(../images/slider-bievenidos2a.png);
-			
-		}
-	}
-
-
-.bienvenidos .slider2:before{
-	content: '';
-	position: absolute;
-	width:140vw;
-	height: 100vh;
-      background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-image: url(../images/slider-bievenidos2b.png);
-	animation:bienvenidos1b 2s ease;
-	animation-fill-mode: forwards;
+    background-image: url(../images/slider-bienvenidos2.png);   
+    max-width: 100%;
+    overflow: hidden;
+    animation: bienvenidos2 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    overflow: hidden;
     z-index: 1;
 }
 
-	@keyframes bienvenidos1b{
+@keyframes bienvenidos2 {
 
-		0%{
-			/*background-repeat: no-repeat;
-			background-image: url(home-2.png);*/
-			right: -40%;
-			opacity: 0;
-		}
-		20%{
-			right: -40%;
-			opacity: 0;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/
-		}
-			40%{
-			right: -40%;
-			opacity: 0;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/	
-		}
-			100%{
-			right: -40%;
-			opacity: 1;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/	
-		}
-	}
+   from {
+       
+        right: 0%;
+        opacity: 0;
+    }
+    to {
+         background-image: url(../images/slider-bienvenidos2.png);
+        right: 0%;
+        opacity: 1;
+        
+    }
+}
+
 
 //---------------------------------------
 // tercer slider
 //---------------------------------------
+.bienvenidos .slider3 {
 
 
-
-
-
-.bienvenidos .slider3{
-
-    
     position: relative;
     width: 100vw;
     height: 100vh;
-     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: aqua;
-	background: white;
-	padding-bottom:20px;
-	max-width: 100%;
-	overflow: hidden;
-    
-}
-
-
-
-	.bienvenidos .slider3:after{
-	content: '';
-	position: absolute;
-	width: 140vw;
-	height: 100vh;
-    		  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	top:0;
-	animation:bienvenidos2c 0.5s ease-in;
-	animation-fill-mode: forwards;
-	overflow: hidden;
-        z-index: 1;
-}
-
-	@keyframes bienvenidos2c{
-
-		0%{
-			background-image:  url(../images/slider-bievenidos3a.png);
-			  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-             top: -40%;
-			right:100%;
-		}
-		100%{
-             top:0%;
-			right: -40%;
-			  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-			background-image:  url(../images/slider-bievenidos3a.png);
-			
-		}
-	}
-
-
-.bienvenidos .slider3:before{
-	content: '';
-	position: absolute;
-	width:140vw;
-	height: 100vh;
-      background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-image: url(../images/slider-bievenidos3b.png);
-	animation:bienvenidos1c 2s ease;
-	animation-fill-mode: forwards;
+    background-image: url(../images/slider-bienvenidos3.png);   
+    max-width: 100%;
+    overflow: hidden;
+    animation: bienvenidos3 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    overflow: hidden;
     z-index: 1;
 }
 
-	@keyframes bienvenidos1c{
+@keyframes bienvenidos3 {
 
-		0%{
-			/*background-repeat: no-repeat;
-			background-image: url(home-2.png);*/
-			right: -40%;
-			opacity: 0;
-		}
-		20%{
-			right: -40%;
-			opacity: 0;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/
-		}
-			40%{
-			right: -40%;
-			opacity: 0;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/	
-		}
-			100%{
-			right: -40%;
-			opacity: 1;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/	
-		}
-	}
-
-
-
+   from {
+       
+        right: 0%;
+        opacity: 0;
+    }
+    to {
+         background-image: url(../images/slider-bienvenidos3.png);
+        right: 0%;
+        opacity: 1;
+        
+    }
+}
 //---------------------------------------
 // cuarto slider
 //---------------------------------------
+.bienvenidos .slider4 {
 
 
-
-
-.bienvenidos .slider4{
-
-    
     position: relative;
     width: 100vw;
     height: 100vh;
-     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: aqua;
-	background: white;
-	padding-bottom:20px;
-	max-width: 100%;
-	overflow: hidden;
-    
-}
-
-
-
-	.bienvenidos .slider4:after{
-	content: '';
-	position: absolute;
-	width: 140vw;
-	height: 100vh;
-    		  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	top:0;
-	animation:bienvenidos2d 0.5s ease-in;
-	animation-fill-mode: forwards;
-	overflow: hidden;
-        z-index: 1;
-}
-
-	@keyframes bienvenidos2d{
-
-		0%{
-			background-image:  url(../images/slider-bievenidos4a.png);
-					  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-             top: -40%;
-			right:100%;
-		}
-		100%{
-             top:0%;
-			right: -40%;
-					  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-			background-image:  url(../images/slider-bievenidos4a.png);
-			
-		}
-	}
-
-
-.bienvenidos .slider4:before{
-	content: '';
-	position: absolute;
-	width: 140vw;
-	height: 100vh;
-    		  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-image: url(../images/slider-bievenidos4b.png);
-	animation:bienvenidos1d 2s ease;
-	animation-fill-mode: forwards;
+    background-image: url(../images/slider-bienvenidos4.png);    
+    max-width: 100%;
+    overflow: hidden;
+    animation: bienvenidos4 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    overflow: hidden;
     z-index: 1;
 }
 
-	@keyframes bienvenidos1d{
+@keyframes bienvenidos4 {
 
-		0%{
-			/*background-repeat: no-repeat;
-			background-image: url(home-2.png);*/
-			right: -40%;
-			opacity: 0;
-		}
-		20%{
-			right: 0%;
-			opacity: 0;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/
-		}
-			40%{
-			right: -40%;
-			opacity: 0;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/	
-		}
-			100%{
-			right: -40%;
-			opacity: 1;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/	
-		}
-	}
-
+    from {
+       
+        opacity: 0;
+    }
+    to {
+         background-image: url(../images/slider-bienvenidos4.png);
+        opacity: 1;
+        
+    }
+}
 //---------------------------------------
 // quinto slider
 //---------------------------------------
+.bienvenidos .slider5 {
 
 
-
-
-.bienvenidos .slider5{
-
-    
     position: relative;
     width: 100vw;
     height: 100vh;
-     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: aqua;
-	background: white;
-	padding-bottom:20px;
-	max-width: 100%;
-	overflow: hidden;
-    
-}
-
-
-
-	.bienvenidos .slider5:after{
-	content: '';
-	position: absolute;
-	width: 140vw;
-	height: 100vh;
-    		  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	top:0;
-	animation:bienvenidos2e 0.5s ease-in;
-	animation-fill-mode: forwards;
-	overflow: hidden;
-        z-index: 1;
-}
-
-	@keyframes bienvenidos2e{
-
-		0%{
-			background-image:  url(../images/slider-bievenidos5a.png);
-					  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-             top: -40%;
-			right:100%;
-		}
-		100%{
-             top:0%;
-			right: -40%;
-					  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-			background-image:  url(../images/slider-bievenidos5a.png);
-			
-		}
-	}
-
-
-.bienvenidos .slider5:before{
-	content: '';
-	position: absolute;
-	width: 140vw;
-	height: 100vh;
-    		  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-image: url(../images/slider-bievenidos5b.png);
-	animation:bienvenidos1e 2s ease;
-	animation-fill-mode: forwards;
+    background-image: url(../images/slider-bienvenidos5.png);   
+    max-width: 100%;
+    overflow: hidden;
+    animation: bienvenidos5 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    overflow: hidden;
     z-index: 1;
 }
 
-	@keyframes bienvenidos1e{
+@keyframes bienvenidos5 {
 
-		0%{
-			/*background-repeat: no-repeat;
-			background-image: url(home-2.png);*/
-			right: -40%;
-			opacity: 0;
-		}
-		20%{
-			right: 0%;
-			opacity: 0;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/
-		}
-			40%{
-			right: -40%;
-			opacity: 0;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/	
-		}
-			100%{
-			right: -40%;
-			opacity: 1;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/	
-		}
-	}
-
-
+   from {
+       
+        right: 0%;
+        opacity: 0;
+    }
+    to {
+        background-image: url(../images/slider-bienvenidos5.png);
+        right: 0%;
+        opacity: 1;
+        
+    }
+}
 //---------------------------------------
 // sexto slider
 //---------------------------------------
+.bienvenidos .slider6 {
 
 
-
-
-.bienvenidos .slider6{
-
-    
     position: relative;
     width: 100vw;
     height: 100vh;
-     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: aqua;
-	background: white;
-	padding-bottom:20px;
-	max-width: 100%;
-	overflow: hidden;
-    
-}
-
-
-
-	.bienvenidos .slider6:after{
-	content: '';
-	position: absolute;
-	width: 140vw;
-	height: 100vh;
-    		  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	top:0;
-	animation:bienvenidos2f 0.5s ease-in;
-	animation-fill-mode: forwards;
-	overflow: hidden;
-        z-index: 1;
-}
-
-	@keyframes bienvenidos2f{
-
-		0%{
-			background-image:  url(../images/slider-bievenidos6a.png);
-					  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-            
-             top: -40%;
-			right:100%;
-		}
-		100%{
-             top:0%;
-			right: -40%;
-					  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-			background-image:  url(../images/slider-bievenidos6a.png);
-			
-		}
-	}
-
-
-.bienvenidos .slider6:before{
-	content: '';
-	position: absolute;
-	width: 140vw;
-	height: 100vh;
-    		  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-image: url(../images/slider-bievenidos6b.png);
-	animation:bienvenidos1f 2s ease;
-	animation-fill-mode: forwards;
+    background-image: url(../images/slider-bienvenidos6.png);   
+    max-width: 100%;
+    overflow: hidden;
+    animation: bienvenidos6 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    overflow: hidden;
     z-index: 1;
 }
 
-	@keyframes bienvenidos1f{
+@keyframes bienvenidos6 {
 
-		0%{
-			/*background-repeat: no-repeat;
-			background-image: url(home-2.png);*/
-			right: -40%;
-			opacity: 0;
-		}
-		20%{
-			right: -40%;
-			opacity: 0;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/
-		}
-			40%{
-			right: -40%;
-			opacity: 0;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/	
-		}
-			100%{
-			right: -40%;
-			opacity: 1;
-			/*background-image: url(home-2.png);
-			background-repeat: no-repeat;*/	
-		}
-	}
-
-
-
+   from {
+       
+        
+        opacity: 0;
+    }
+    to {
+        background-image: url(../images/slider-bienvenidos6.png);
+        opacity: 1;
+        
+    }
+}
 
 
 //---------------------------------------
 // encabezado
 //---------------------------------------
+.encabezado .container {
 
-.encabezado .container{
-    
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.encabezado{
-    background:transparent;
+.encabezado {
+    background: transparent;
     padding: 1rem;
-    
-}
-.encabezado .container{
-    display: flex;
-    flex-wrap:nowrap;
-    justify-content: space-between;
-   
-    align-items: center;
-    
+
 }
 
-.encabezado .container .menu-borde{
+.encabezado .container {
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.encabezado .container .menu-borde {
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;  
-    background-color: rgba(0, 0, 0,0.5);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 50px;
 }
 
-.encabezado .logonav{
-    
-
+.encabezado .logonav {
+    width: 15%;
+    height: auto;    
 }
 
-.encabezado .logonav img{
-    
+.st0{
+    fill:#000000;
+}
+.st1{
+    fill:#ffffff;
+}
+.st2{
+    fill:#DDB31F;
+}
+.st3{
+    fill:#ffffff;
+}
+.st4{
+    fill:#000000;
+}
+.st5{
+    fill:$general;
+}
+
+.st6{
+    fill:#DDB31F;
+}
+.st7{
+    fill:#ffffff;
+}
+.st8{
+    fill:#000000;
+}
+.st9{
+    fill:#ffffff;
+}
+
+
+
+.encabezado .logonav img {
+
     width: 200px;
     height: auto;
     padding-top: 0.5rem;
-    
+
 }
 
-.boton-menu{
+.boton-menu {
     border: 0;
     font-size: 2rem;
     margin: 0;
     padding: 0.8rem;
     background: transparent;
     color: $texto2;
-    
-    
-}
-.boton-menu:focus{
-   outline: 0;
+
+
 }
 
-.boton-buscar{
+.boton-menu:focus {
+    outline: 0;
+}
+
+.boton-buscar {
     margin-left: auto;
     margin-right: 0.5rem;
 }
 
 /* estilos bloque buscar */
 
-#bloque-buscar{
-    
+#bloque-buscar {
+
     flex: 1 1 100%;
 }
 
-.contenedor-bloque-buscar{
-    
+.contenedor-bloque-buscar {
+
     display: flex;
     height: 3rem;
-    margin:1rem 0;
+    margin: 1rem 0;
 }
-.contenedor-bloque-buscar input[type="text"]{
-    border:0;
+
+.contenedor-bloque-buscar input[type="text"] {
+    border: 0;
     border-radius: 5px 0 0 5px;
     padding: 1rem;
 }
-.contenedor-bloque-buscar input[type="submit"]{
-    flex:1 1 auto;
-    border:0;
+
+.contenedor-bloque-buscar input[type="submit"] {
+    flex: 1 1 auto;
+    border: 0;
     border-radius: 0 5px 5px 0;
-    color:$texto2;
-    background:$general;
+    color: $texto2;
+    background: $general;
 }
-#menu-principal{
+
+#menu-principal {
     display: none;
     font-family: "Gill Sans MT";
-    
+
 }
-#menu-principal ul{
+
+#menu-principal ul {
     font-family: "Gill Sans MT";
-     display: flex;
+    display: flex;
     margin-top: 18px;
-    
+
 }
-#menu-principal ul a{
+
+#menu-principal ul a {
     font-family: "Gill Sans MT";
     font-size: 1rem;
     margin: 20px;
     color: #ffffff;
     border-right: 1px solid #ffffff;
     padding-right: 25px;
-   
+
 }
-#menu-principal ul a{
-       border-right: 1px solid #ffffff;
-    
+
+#menu-principal ul a {
+    border-right: 1px solid #ffffff;
+
 }
+
 #menu-principal ul a:hover,
-#menu-principal ul li.active a{
-  color: $hover;
-    
+#menu-principal ul li.active a {
+    color: $hover;
+
 }
 
 
-.btn-primary{
-    
+.btn-primary {
+
     margin-top: 2rem;
     background-color: $general;
     border-color: transparent;
     transition: all .5s ease;
-    
+
 }
 
 
-.flecha-bajar a{
-    
+.flecha-bajar a {
+
     color: #ffffff;
     font-size: 4rem;
     display: inline-block;
@@ -961,15 +965,15 @@ body{
 }
 
 
-@keyframes flecha-animada{
-    
-    from{
+@keyframes flecha-animada {
+
+    from {
         transform: translateY(0);
     }
-    50%{
+    50% {
         transform: translateY(6px);
     }
-    to{
+    to {
         transform: translateY(0);
     }
 }
@@ -978,45 +982,100 @@ body{
 // ovis
 //---------------------------------------
 
-
-.ovis{
-    background: url(../images/fondo-ovis.png);
+.ovis {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: top;
     background-size: cover;
-    height: 100vh;  
-    margin-top: -1px;
+    background-color: aqua;
+    background: white;
+    padding-bottom: 20px;
+    max-width: 100%;
+    overflow: hidden;
+   
 }
-.ovis .ovis-divs{
+
+
+
+//animacion de fondo  ovis
+
+.ovis:after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+     
+    top: 0;
+    animation: ovis 1s ease;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes ovis {
+
+   0% {
+       
+        right: 0%;
+        opacity: 0;
+    }
+    20% {
+        right: 0%;
+        opacity: 0;
     
+    }
+    40% {
+        right: 0%;
+        opacity: 0;
+       
+    }
+    100% {
+         background-image: url(../images/fondo-ovis.png);
+        right: 0%;
+        opacity: 1;
+        
+    }
+}
+.ovis .row {
+
+    position: relative;
+    z-index: 5;
+}
+
+.ovis .ovis-divs {
+
     padding-top: 12%;
 }
 
-.ovis h2 .titulo-amarillo{
+.ovis h2 .titulo-amarillo {
     color: $general;
     font-family: "Agency FB";
     font-weight: 800;
 }
-.ovis h2 .titulo-amarillo2{
+
+.ovis h2 .titulo-amarillo2 {
     color: $general;
     font-family: "Agency FB";
 }
-.ovis h2{
+
+.ovis h2 {
     color: $texto2;
     font-family: "Agency FB";
     font-size: 3.3rem;
 }
 
-.ovis h2 i{
-    
+.ovis h2 i {
+
     font-size: 2rem;
     vertical-align: middle;
-     color: $general;
+    color: $general;
 }
 
-.ovis p{
+.ovis p {
     color: $texto2;
-    text-align:justify; 
+    text-align: justify;
     font-family: "Helvetica LT Std";
     font-weight: 100;
     font-size: 1.3rem;
@@ -1025,103 +1084,489 @@ body{
 
 
 //---------------------------------------
-// que hacemos
+// servicios
 //---------------------------------------
-
-
-.quehacemos{
-   
-    height: 100vh;  
+.servicios {
+    min-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.servicios .slideshow-ser {
+    position: relative;
+    width: 100vw; //background:#e9bc00;
+}
+//estilos de paginacion que hacemos con fondo negro
+.servicios .paginacion-ser .fondo1 {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #000000;
+    animation: fondo1 2s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
 }
 
-.quehacemos .display-4{
-    padding-top: 6rem;
+@keyframes fondo1 {
+
+   from{
+       border-bottom:none;
+      left:-80%; 
+    }
+    to {
+        left:0%;
+        
+    }
 }
 
-.prueba{
-    background: $general;
+
+
+.servicios .paginacion-ser .fondo2 {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #000000;
+    animation: fondo1 1.7s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes fondo1 {
+
+   from{
+       border-bottom:none;
+      left:-80%; 
+    }
+    to {
+        left:0%;
+        
+    }
+}
+
+.servicios .paginacion-ser .fondo3 {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #000000;
+    animation: fondo1 1.4s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes fondo1 {
+
+   from{
+       border-bottom:none;
+      left:-80%; 
+    }
+    to {
+        left:0%;
+        
+    }
+}
+
+.servicios .paginacion-ser .fondo4 {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #000000;
+    animation: fondo1 1.1s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes fondo1 {
+
+   from{
+       border-bottom:none;
+      left:-80%; 
+    }
+    to {
+        left:0%;
+        
+    }
+}
+
+.servicios .paginacion-ser .fondo5 {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #000000;
+    animation: fondo1 0.8s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes fondo1 {
+
+   from{
+       border-bottom:none;
+      left:-80%; 
+    }
+    to {
+        left:0%;
+        
+    }
+}
+
+.servicios .paginacion-ser .fondo6 {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #000000;
+    animation: fondo1 0.5s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes fondo1 {
+
+   from{
+       border-bottom:none;
+      left:-80%; 
+    }
+    to {
+        left:0%;
+        
+    }
 }
 
 
-.quehacemos .slideshow-ha{
-  position: relative;
-    width: 100%;
-    //background:#e9bc00;
+
+.icon{
+    
+    background-color: green !important;
+}
+
+.servicios .slider-ser {
+    list-style: none;
+     
+}
+
+
+
+.servicios .slider-ser .ser5 h5,
+.servicios .slider-ser .ser7 h5{
+    color:$general;
+    font-weight: 600;
+}
+
+//marketing politico amarillo
+.servicios .slider-ser .ser5 p,
+.servicios .slider-ser .ser7 p{
+    margin-top: -20px;
+}
+
+//animacion servicios palabra sale por derecha
+.servicios .slider-ser .li-ser1 h1 {
+    position: relative;
+    top:0;
+    right: -100%;
+    padding-top: 50%;
+    font-size: 9rem;
+    font-family: "Agency FB";
+    font-weight: 800;
+    animation: servicioh1 0.5s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes servicioh1 {
+
+   from{
+       
+    right: -50%;
+    }
+    to {
+   right: 0%;
+        
+    }
+}
+
+
+.servicios .slider-ser .li-ser1{
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/slider-servicios.png);
+}
+.servicios .slider-ser .li-ser2{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/slider-servicios1.png);
+    animation: ser2 0.8s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 0;
+}
+
+@keyframes ser2 {
+
+   from{
+       
+    right:-100%;
+    }
+    to {
+    right:0;
+        
+    }
+}
+
+.servicios .slider-ser .li-ser3{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/slider-servicios2.png);
+    animation: ser2 0.8s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 0;
+}
+
+@keyframes ser2 {
+
+   from{
+       
+    right:-100%;
+    }
+    to {
+    right:0;
+        
+    }
+}
+
+.servicios .slider-ser .li-ser4{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/slider-servicios3.png);
+    animation: ser2 0.8s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 0;
+}
+
+@keyframes ser2 {
+
+   from{
+       
+    right:-100%;
+    }
+    to {
+    right:0;
+        
+    }
+}
+.servicios .slider-ser .li-ser5{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/slider-servicios4.png);
+    animation: ser2 0.8s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 0;
+}
+
+@keyframes ser2 {
+
+   from{
+       
+    right:-100%;
+    }
+    to {
+    right:0;
+        
+    }
+}
+.servicios .slider-ser .li-ser6{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/slider-servicios5.png);
+    animation: ser2 0.8s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 0;
+}
+
+@keyframes ser2 {
+
+   from{
+       
+    right:-100%;
+    }
+    to {
+    right:0;
+        
+    }
+}
+.servicios .slider-ser .li-ser7{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/slider-servicios6.png);
+    animation: ser2 0.8s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 0;
+}
+
+@keyframes ser2 {
+
+   from{
+       
+    right:-100%;
+    }
+    to {
+    right:0;
+        
+    }
+}
+.servicios .slider-ser .li-ser2 h2,
+.servicios .slider-ser .li-ser3 h2,
+.servicios .slider-ser .li-ser4 h2,
+.servicios .slider-ser .li-ser5 h2,
+.servicios .slider-ser .li-ser6 h2,
+.servicios .slider-ser .li-ser7 h2{
+    
+    padding-top: 54%;
+    font-size: 4rem;
+    font-family: "Agency FB";
+    font-weight: 800;
+}
+.servicios .slider-ser .li-ser2 .titulo-amarillo,
+.servicios .slider-ser .li-ser3 .titulo-amarillo,
+.servicios .slider-ser .li-ser4 .titulo-amarillo,
+.servicios .slider-ser .li-ser5 .titulo-amarillo,
+.servicios .slider-ser .li-ser6 .titulo-amarillo,
+.servicios .slider-ser .li-ser7 .titulo-amarillo{
+    
+    color: $general;
+    font-size: 4rem;
+    font-family: "Agency FB";
+    font-weight: 800;
+}
+
+.servicios .slider-ser .li-ser2 p,
+.servicios .slider-ser .li-ser3 p,
+.servicios .slider-ser .li-ser4 p,
+.servicios .slider-ser .li-ser5 p,
+.servicios .slider-ser .li-ser6 p,
+.servicios .slider-ser .li-ser7 p{
+    width: 50%;
+    padding-top: 1rem;
+    color: $texto;
+    font-size: 1.3rem;
+     font-family: "Helvetica LT Std";
+    font-weight: 100;
+    text-align: justify;
+}
+
+
+
+.servicios .paginacion-ser {
+
+    position: absolute;
+    top: 40%; //left: 10.3rem;
+    left: 7.5%;
+    display: flex;
+    list-style: none;
     
 }
-.quehacemos ul,ol{
-    list-style: none;
-   
+
+//color del activde de paginacion que hacemos
+.active {
+
+    background-color: #F7BC03!important;
 }
 
-.slideshow-ha .slider-ha li img{
+.slideshow-ser .slider-ser li img {
     max-width: 100%;
     width: 100vw;
     height: 100vh;
+   
 }
 
-.paginacion-ha{
-    
-    position: absolute;
-    top: 26%;
-    //left: 10.3rem;
-     left: 9%;
-    display: flex;
-    
-    
-}
-
-.paginacion-ha li{
-    width: 3.5rem;
-    height: 3.5rem;
-    line-height: 3.5rem;
-   // background-color: #000000;
-}
-.paginacion-ha .li1 img,.paginacion-ha .li2 img,
-.paginacion-ha .li3 img,.paginacion-ha .li4 img,
-.paginacion-ha .li5 img,.paginacion-ha .li6 img{
-    
-    width: 2rem;
-    height: auto;
-    margin-left: 1.17rem;
-    
-}
-
-
-
-.slideshow-ha .paginacion-ha li{
+.slideshow-ser .paginacion-ser li {
     font-size: 20px;
     margin: 2px 10px;
     cursor: pointer;
     z-index: 9999;
-    position:relative;
+    position: relative;
 }
 
-.left-ha,.right-ha{
+.left-ser,
+.right-ser {
     position: absolute;
     top: 0;
-    color:#000000;
-    font-size: 35px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 100;
     height: 100%;
     display: flex;
     align-items: center;
     cursor: pointer;
-    
 }
-.left-ha{
-    left: 10px;
+
+.left-ser {
+    left: 10px;  
 }
-.right-ha{
-    right:  10px;
+.left-ser span {
+    font-size: 1rem;
+    margin-left: 40px;
+    padding: 1px;
+    background-color: rgba(0,0,0,0.5)     
 }
+.right-ser {
+    right: 10px;   
+}
+.right-ser span {
+    margin-right: 40px;
+    padding: 1px;
+    background-color: rgba(0,0,0,0.5)     
+}
+
 
 
 //---------------------------------------
 // conocenos
 //---------------------------------------
-
-
-.conocenos{
+.conocenos {
     background: url(../images/fondo-conocenos.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -1129,38 +1574,44 @@ body{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    }
-
-
-
-.conocenos .slideshow-ha{
-  position: relative;
-    width: 100%;
+    
+    
     
 }
-.conocenos ul,ol{
-    list-style: none; 
+
+
+
+.conocenos .slideshow-ha {
+    position: relative;
+    width: 100%;
+
 }
 
-.slideshow-co .slider-ha li img{
+.conocenos ul,
+ol {
+    list-style: none;
+}
+
+.slideshow-co .slider-ha li img {
     max-width: 100%;
     width: 100vw;
     height: 100vh;
 }
-.slideshow-co .slider-co {    
+
+.slideshow-co .slider-co {
     width: 100vw;
     height: 100vh;
 }
 
-.slideshow-co .slider-co li{
+.slideshow-co .slider-co li {
     width: 100%;
     height: 100%;
 }
+
 //altura definida para la imagen de conocenos en slider li conocenos
-.slideshow-co .slider-co li img{
+.slideshow-co .slider-co li img {
     width: 100%;
-    height: auto; 
-    
+    height: auto;
     position: relative;
     top: 15%;
     z-index: 1;
@@ -1168,142 +1619,162 @@ body{
 
 
 //primer li de conocenos talentos del 1 al 5 
-
-
-.conocenos .talentos-row .talentos1{
-    width: 100%;
-    
+.conocenos .talentos-row .talentos1 {
+    width: 50%;
+    padding: 2rem;
     font-family: "Helvetica LT Std";
-    
+    margin-left: 0rem;
     margin-top: -11rem;
-     text-align: justify;
-}
-.conocenos .talentos-row .talentos2{
-      width: 100%;
+    text-align: justify;
     
-    margin-top:-1rem;
-    padding-left: 5rem;
-    
-    font-family: "Helvetica LT Std";
-     text-align: justify;
 }
 
-.conocenos .talentos-row .talentos3{
- 
-    width: 100%;
-    margin-top:-1rem;
-  
-     padding-left: 2rem;
+.conocenos .talentos-row .talentos2 {
+    width: 50%;
+    padding: 2rem;
+    margin-top: -1rem;
+
     font-family: "Helvetica LT Std";
-     text-align: justify;
+    text-align: justify;
 }
-.conocenos .talentos-row .talentos4{
-      width: 100%;
+
+.conocenos .talentos-row .talentos3 {
+
+    width: 50%;
+    margin-top: -1rem;
+    padding: 2rem;
+    font-family: "Helvetica LT Std";
+    text-align: justify;
+}
+
+.conocenos .talentos-row .talentos4 {
+    width: 50%;
     margin-right: 0rem;
-   margin-top: -11rem;
-   
-         padding-left: 5rem;
+    margin-top: -11rem;
+    padding: 2rem;
     box-sizing: border-box;
     font-family: "Helvetica LT Std";
-     text-align: justify;
+    text-align: justify;
 }
-.conocenos .talentos-row .talentos5{
-      width: 100%;
-    
-   margin-top: -11rem;
-     padding-right: 2rem;
+
+.conocenos .talentos-row .talentos5 {
+    width:50%;
+    padding: 2rem;
+    margin-top: -11rem;
+    padding-right: 2rem;
     font-family: "Helvetica LT Std";
-     text-align: justify;
+    text-align: justify;
 }
 
 
 .conocenos .talentos-row .talentos1 h6,
-.conocenos .talentos-row .talentos2 h6{
-    
+.conocenos .talentos-row .talentos2 h6 {
+
     font-family: "Agency FB";
     font-weight: 800;
-    font-size:1.2rem;
-    color:$texto2;
+    font-size: 1.2rem;
+    color: $texto2;
     padding-left: 1.5rem;
 }
 
 .conocenos .talentos-row .talentos3 h6,
 .conocenos .talentos-row .talentos4 h6,
-.conocenos .talentos-row .talentos5 h6{
-    
+.conocenos .talentos-row .talentos5 h6 {
+
     font-family: "Agency FB";
     font-weight: 800;
-    font-size:1.2rem;
-    color:$general;
+    font-size: 1.2rem;
+    color: $general;
     padding-left: 1.5rem;
 }
+.conocenos .talentos-row .talentos1 h4 .fa,
+.conocenos .talentos-row .talentos2 h4 .fa,
+.conocenos .talentos-row .talentos3 h4 .fa{
+    color:#ffffff;
+}
+.conocenos .talentos-row .talentos4 h4 .fa,
+.conocenos .talentos-row .talentos5 h4 .fa{
+    color:$general;
+}
+
+.conocenos .talentos-row .aliados1 h4 .fa,
+.conocenos .talentos-row .aliados2 h4 .fa,
+.conocenos .talentos-row .aliados3 h4 .fa,
+.conocenos .talentos-row .aliados6 h4 .fa,
+.conocenos .talentos-row .aliados7 h4 .fa{
+    color:#ffffff;
+}
+.conocenos .talentos-row .aliados4 h4 .fa,
+.conocenos .talentos-row .aliados5 h4 .fa{
+    color:$general;
+}
+
 
 
 
 //segundos  li de conocenos aliados del 1 al 5 
+.conocenos .talentos-row .aliados1 {
+   width: 50%;
+    padding: 2rem;
+    margin-top: -1rem;
 
-
-.conocenos .talentos-row .aliados1{
     font-family: "Helvetica LT Std";
-    width: 100%;
-    margin-top:-1rem;
     text-align: justify;
-   
+
 }
-.conocenos .talentos-row .aliados2{
-      width: 100%;
+
+.conocenos .talentos-row .aliados2 {
+  width: 50%;
+    padding: 2rem;
+    font-family: "Helvetica LT Std";
+    margin-left: 0rem;
     margin-top: -11rem;
-    
-   
-     padding-left: 5rem;
-    font-family: "Helvetica LT Std";
     text-align: justify;
 }
 
-.conocenos .talentos-row .aliados3{
- 
-    width: 100%;
+.conocenos .talentos-row .aliados3 {
+ width: 50%;
+    padding: 2rem;
+    font-family: "Helvetica LT Std";
+    margin-left: 0rem;
     margin-top: -11rem;
- 
-     padding-left: 2rem;
-    font-family: "Helvetica LT Std";
     text-align: justify;
 }
-.conocenos .talentos-row .aliados4{
-      width: 100%;
-    margin-right: 0rem;
-   margin-top:-1rem;
-  
-         padding-left: 5rem;
-    box-sizing: border-box;
-    font-family: "Helvetica LT Std";
-    text-align: justify;
-}
-.conocenos .talentos-row .aliados5{
-      width: 100%;
 
-  margin-top:-1rem;
-  
-     padding-right: 2rem;
-    font-family: "Helvetica LT Std";
-    text-align: justify;
-}
-.conocenos .talentos-row .aliados6{
-      width: 17%;
+.conocenos .talentos-row .aliados4 {
+    width: 50%;
+    padding: 2rem;
+    margin-top: -1rem;
 
-  margin-top:-1rem;
-  padding-left: 0rem;
-     padding-right: 0rem;
     font-family: "Helvetica LT Std";
     text-align: justify;
-    
 }
-.conocenos .talentos-row .aliados7{
-      width: 20%;
-padding-left: 3.5rem;
-margin-top: -11rem;
-  text-align: justify;
-     padding-right: 0rem;
+
+.conocenos .talentos-row .aliados5 {
+  width: 50%;
+    padding: 2rem;
+    margin-top: -1rem;
+
+    font-family: "Helvetica LT Std";
+    text-align: justify;
+}
+
+.conocenos .talentos-row .aliados6 {
+    width: 20%;
+    margin-top: 0rem;
+    padding-left: 2rem;
+    padding-right: 0rem;
+    font-family: "Helvetica LT Std";
+    text-align: justify;
+
+}
+
+.conocenos .talentos-row .aliados7 {
+    width: 20%;
+    padding-left: 2rem;
+    margin-top: -9rem;
+    text-align: justify;
+    padding-right: 0rem;
     font-family: "Helvetica LT Std";
 }
 
@@ -1311,357 +1782,345 @@ margin-top: -11rem;
 .conocenos .talentos-row .aliados2 h6,
 .conocenos .talentos-row .aliados3 h6,
 .conocenos .talentos-row .aliados6 h6,
-.conocenos .talentos-row .aliados7 h6{
-    
+.conocenos .talentos-row .aliados7 h6 {
+
     font-family: "Agency FB";
     font-weight: 800;
-    font-size:1.2rem;
-    color:$texto2;
+    font-size: 1.2rem;
+    color: $texto2;
     padding-left: 1.5rem;
 }
 
 .conocenos .talentos-row .aliados4 h6,
-.conocenos .talentos-row .aliados5 h6{
-    
+.conocenos .talentos-row .aliados5 h6 {
+
     font-family: "Agency FB";
     font-weight: 800;
-    font-size:1.2rem;
-    color:$general;
+    font-size: 1.2rem;
+    color: $general;
     padding-left: 1.5rem;
 }
-.conocenos .talentos-row p{
-   padding-left: 1.5rem;
+
+.conocenos .talentos-row p {
+    padding-left: 1.5rem;
     color: #000000;
     font-weight: 200;
 }
 
-.conocenos .talentos-row h4{
-    
+.conocenos .talentos-row h4 {
+
     font-family: "Agency FB";
     font-weight: 800;
-    font-size:2rem;
+    font-size: 2rem;
 }
 
 //altura definida de el contenido de slider li conocenos
-.conocenos .talentos-row{
+.conocenos .talentos-row {
     position: absolute;
     display: flex;
-    top:65%;
-    padding: 0 8rem; 
-     z-index: 2; 
-}
-// colores de las flechas hacia abajo en los perfiles talentos fa-caret-down
-.conocenos .talentos1 .fa,.conocenos .talentos2 .fa,.conocenos .talentos3 .fa{
-   color: #ffffff;
-    padding-right: 0.5rem;
-}
-.conocenos .talentos4 .fa,.conocenos .talentos5 .fa{
-   color: #F7BC03;
-    padding-right: 0.5rem;
+    top: 60%;
+    padding: 0 11rem;
+    z-index: 2;
 }
 
-// colores de las flechas hacia abajo en los perfiles aliados fa-caret-down
-.conocenos .aliados1 .fa,.conocenos .aliados2 .fa,.conocenos .aliados3 .fa{
-   color: #ffffff;
-    padding-right: 0.5rem;
-}
-.conocenos .aliados4 .fa,.conocenos .aliados5 .fa{
-   color: #F7BC03;
-    padding-right: 0.5rem;
-}
-
- .left-co{
-      position: absolute;
+.left-co {
+    position: absolute;
     top: 0rem;
-    font-size: 35px;
     height: 100%;
     display: flex;
     align-items: center;
     cursor: pointer;
-     width: 5.1%;
+    width: 5%;
     left: 0px;
-     z-index: 5;
+    z-index: 5;
 }
- .right-co{
-      position: absolute;
+
+.right-co {
+    position: absolute;
     top: 0rem;
-    font-size: 35px;
     height: 100%;
     display: flex;
     align-items: center;
     cursor: pointer;
-     width:8%;
-    right:  0px;
-      z-index: 5;
-      
+    width: 5%;
+    right: 0px;
+    z-index: 5;
+}
+
+.left-co img{
+    position: relative;
+    left: 45%;
+    background-color: rgba(0,0,0,0.5)   
+}
+.right-co  img{
+    position: relative;
+    right: 0%;
+    background-color: rgba(0,0,0,0.5)   
 }
 
 
 //---------------------------------------
 // portafolio
 //---------------------------------------
-
-
-.portafolio{
+.portafolio {
     background: url(../images/fondo-portafolio.png);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover;
-    height: 100vh;  
+    background-size: auto;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    
 }
 
-.portafolio .display-4{
-    padding-top: 6rem;
+.portafolio .row {
+
+    margin: 0;
 }
 
-.prueba{
-    background: $general;
-}
-
-.prueba2{
-    background: red;
+.portafolio .porta-contenedor {
+    padding-top: 330px; //background-color: green;
 }
 
 
+
+.porta-div1 .porta-imagen {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.porta-div1 .porta-imagen img {
+    width: 100%;
+
+}
+
+.porta-div1 .porta-titulo {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    transition: .4s;
+
+}
+
+.porta-div1 .porta-titulo h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    color: #E9BC00;
+    font-family: "Agency FB";
+    font-weight: 800;
+    font-size: 3rem;
+}
+.porta-div1 .porta-titulo h6 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    color: #ffffff;
+    font-family: "Agency FB";
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.porta-div1 .porta-imagen:hover .porta-titulo {
+    cursor: pointer;
+    left: 0;
+
+}
+
+
+
+
+.porta-div1 {
+    padding: 0;
+
+    height: 370px;
+    //background: $general;
+}
+
+.porta-div2 {
+    padding: 0;
+    
+}
+
+.porta-div3 {
+    padding: 0;
+    
+}
+
+.porta-div4 {
+    padding: 0;
+    
+}
+
+.porta-div5 {
+    padding: 0;
+    
+}
+
+.porta-div6 {
+    padding: 0;
+    
+}
+
+.porta-div7 {
+    padding: 0;
+    
+}
+
+.porta-div8 {
+    padding: 0;
+    
+}
+
+.porta-div9 {
+    padding: 0;
+    
+}
+
+.porta-div10 {
+    padding: 0;
+    
+}
+
+.porta-div11 {
+    padding: 0;
+    
+}
+
+.porta-div12 {
+    padding: 0;
+    
+}
+
+.porta-div1 .porta-titulo .porta-lengueta{
+    position: relative;
+    width: 20%;
+    height: auto;
+    
+}
+
+//---------------------------------------
+// logos portafolio
+//---------------------------------------
+.portafolio .porta-logos {
+    padding: 0;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+    background-color: #ffffff;
+}
 
 
 //---------------------------------------
 // encuentranos
 //---------------------------------------
+.encuentranos {
 
-
-.encuentranos{
-    background: url(../images/fondo-contactanos.png);
+    background-image: url(../images/fondo-encuentranos.png);
+    position: relative;
+    width: 100vw;
+    height: 99vh;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: top;
     background-size: cover;
-    height: 100vh;  
+    padding-bottom: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    
+
 }
 
-.encuentranos .form-group{
+.encuentranos .form-group {
     display: flex;
     padding-top: 20px;
 }
-.encuentranos .formulario{
-padding-top: 16rem;
+
+.encuentranos .formulario {
+    position: relative;
+    padding-top: 16rem;
     font-size: 1.6rem;
     color: $texto2;
-      font-family: "Helvetica LT Std";
+    font-family: "Helvetica LT Std";
+    z-index: 5;
 }
 
-.encuentranos .encuentranos1{
-    background: url(../images/slider-inicio-img2.png);
+.encuentranos .encuentranos1 {
+    position: relative;
+    background: url(../images/encuentranos-flecha.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:contain;
     width: 70vw;
     height: 80vh;
     color: $texto2;
     font-size: 3rem;
     font-family: "Agency FB";
-    
+    padding-top: 10rem;
+    z-index: 5;
+
 }
 
-.encuentranos .btn-primary{
+.encuentranos .btn-primary {
     color: $texto;
-      font-family: "Helvetica LT Std";
+    font-family: "Helvetica LT Std";
     font-weight: 600;
-    margin-left: 45%;
+    margin-left: 50%;
 }
 
-
-//---------------------------------------
-// prueba-carousel
-//---------------------------------------
-
-
-.prueba-carousel{
-    padding-top:0;
-    margin-top: 0px;
-    height: 100vh;
-}
-.prueba-carousel .carousel-inner img{
-    width: 100vw;
-    height: 100vh;
-}
-.probar{
-    width: 100vw;
-    height: 100vh;
-     background: green;
-}
-.prueba-carousel .display-4{
-    padding-top: 6rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//---------------------------------------
-//aqui comienza css de ejemplo
-//---------------------------------------
-
-
-//---------------------------------------
-// Tu mejor eleccion
-//---------------------------------------
-
-
-.tu-mejor-eleccion ul li{
-    
-    list-style: none;
-    min-height: 8rem;//alto minimo en caso el texto sea mas grande que el de otro todo se vea igual.
-}
-.tu-mejor-eleccion ul li .fa{
-    
-    font-size: 2.3rem;
-    background: $general;
-    border-radius: 50%;
-    width: 4.5rem;
-    height: 4.5rem;
-    line-height: 4.5rem;
-}
-
-
-
-//---------------------------------------
-// servicios Main
-//---------------------------------------
-
-.servicios{
-    background:$servicios;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: $texto2;
+.encuentranos .encuentranos-iconos{
+    display: flex;
+    flex-direction: column;
+    font-family: "Agency FB";
     
 }
-
-.servicios img{
-    flex: 0 0 60px;
+.encuentranos .encuentranos-iconos li{
+    font-family: "Agency FB";
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: $texto;
+    line-height: 3rem;
+    margin-left: 5rem;
+    
+}
+.encuentranos .encuentranos-iconos li img{
+    margin-top: -0.7rem;
+    width: 1.7rem;
+    height: auto;
     margin-right: 1rem;
-    overflow: hidden;
-    
 }
-.servicios h3{
+.encuentranos .encuentranos-iconos li .fa{
     
-    display: flex;
-   flex: 1 1 auto;
-    font-size: 1.5rem;
-    justify-content: space-between;
-    border: solid 1px red;
-    align-items: center;
-    cursor: pointer;
-    
+    margin-right: 1rem;
 }
 
-.servicios h3::after{
-   content: " \f054";
-    font-family: FontAwesome;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-    opacity: 0.5;
-    position: relative;
-    left: 0px;
-    transition:all  1s ease;
-    
-    
-}
-.servicios h3:hover::after{
-  left: -10px;
-    cursor: pointer;
-        
+
+
+.encuentranos h1{
+    font-family: "Agency FB";
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
 }
 
-.servicios article{
-    
-    display: flex;
-    align-items: center;
-    min-width: 15rem;
-    
-    
-    
-}
-
-//===========================================
-
-
- input {
-            padding: 3px 6px;
-            cursor: pointer;
-            color: white;
-            background: black;
-            border: 1px dotted black
-        }
-        input:hover{color:black; background:white}
-        .area {
-            padding: 20px 0;
-            min-height: 180px;
-            border-top: 1px dotted black;
-        }
-        .outer {
-            position: absolute;
-            right: 0;
-            overflow: hidden;
-            height: 300px;
-            width: 300px;
-            margin: 20px;
-            -webkit-transition: all .4s
-        }
-        .outer .box {
-            padding: 10px;
-            height: 100px;
-            width: 100px;
-            line-height: 100px;
-            color: white;
-            text-align: center;
-            background: black
-        }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+///////////////////////////////////////
 
 
 

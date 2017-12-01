@@ -24,3 +24,7 @@ var scroll = new SmoothScroll('a[href*="."]', {
               pause: "false"
 })
 
+
+
+
+
