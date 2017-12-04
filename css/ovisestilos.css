@@ -3962,7 +3962,7 @@ ol {
     font-family: "Agency FB";
     width: 100vw;
     height: 100vh;
-    padding-top: 6rem;
+    padding-top: 0rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3976,7 +3976,7 @@ ol {
     background-color: #282625; }
   #menu-principal ul li {
     width: 90%;
-    margin-top: 1rem;
+    margin-top: 0rem;
     border-bottom: 1px solid #ffffff;
     text-align: center;
     margin-left: auto;
