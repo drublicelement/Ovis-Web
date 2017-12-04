@@ -4818,201 +4818,22 @@ ol {
     }
 }
 
-//---------------------------------------
-// segundo slider
-//---------------------------------------
-.bienvenidos .slider2 {
+.bienvenidos .carousel-item:nth-child(2){
 
-
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../images/slider-bienvenidos2.png); 
-     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    overflow: hidden;
-    animation: bienvenidos2 1.5s ease-in-out;
-    animation-fill-mode: forwards;
-    overflow: hidden;
-    z-index: 1;
-}
-
-@keyframes bienvenidos2 {
-
-   from {
-       
-        right: 0%;
-        opacity: 0;
-    }
-    to {
-         background-image: url(../images/slider-bienvenidos2.png);
-         background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-        right: 0%;
-        opacity: 1;
-        
-    }
+    display: none;
 }
 
 
-//---------------------------------------
-// tercer slider
-//---------------------------------------
-.bienvenidos .slider3 {
-
-
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../images/slider-bienvenidos3.png);
-     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    overflow: hidden;
-    animation: bienvenidos3 1.5s ease-in-out;
-    animation-fill-mode: forwards;
-    overflow: hidden;
-    z-index: 1;
+.bienvenidos .carousel-indicators{
+    display: none;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    display: none;
 }
 
-@keyframes bienvenidos3 {
-
-   from {
-       
-        right: 0%;
-        opacity: 0;
-    }
-    to {
-         background-image: url(../images/slider-bienvenidos3.png);
-         background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-        right: 0%;
-        opacity: 1;
-        
-    }
+.bienvenidos .inicio1 {
+  display: none;
 }
-//---------------------------------------
-// cuarto slider
-//---------------------------------------
-.bienvenidos .slider4 {
-
-
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../images/slider-bienvenidos4.png); 
-     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    overflow: hidden;
-    animation: bienvenidos4 1.5s ease-in-out;
-    animation-fill-mode: forwards;
-    overflow: hidden;
-    z-index: 1;
 }
-
-@keyframes bienvenidos4 {
-
-    from {
-       
-        opacity: 0;
-    }
-    to {
-         background-image: url(../images/slider-bienvenidos4.png);
-         background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-        opacity: 1;
-        
-    }
-}
-//---------------------------------------
-// quinto slider
-//---------------------------------------
-.bienvenidos .slider5 {
-
-
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../images/slider-bienvenidos5.png); 
-     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    overflow: hidden;
-    animation: bienvenidos5 1.5s ease-in-out;
-    animation-fill-mode: forwards;
-    overflow: hidden;
-    z-index: 1;
-}
-
-@keyframes bienvenidos5 {
-
-   from {
-       
-        right: 0%;
-        opacity: 0;
-    }
-    to {
-        background-image: url(../images/slider-bienvenidos5.png);
-         background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-        right: 0%;
-        opacity: 1;
-        
-    }
-}
-//---------------------------------------
-// sexto slider
-//---------------------------------------
-.bienvenidos .slider6 {
-
-
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../images/slider-bienvenidos6.png);
-     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    overflow: hidden;
-    animation: bienvenidos6 1.5s ease-in-out;
-    animation-fill-mode: forwards;
-    overflow: hidden;
-    z-index: 1;
-}
-
-@keyframes bienvenidos6 {
-
-   from {
-       
-        
-        opacity: 0;
-    }
-    to {
-        background-image: url(../images/slider-bienvenidos6.png);
-         background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-        opacity: 1;
-        
-    }
-}
-
-
-
-}
-
-
-
-
 
