@@ -3957,7 +3957,7 @@ ol {
   #menu-principal {
     display: none;
     font-family: "Gill Sans MT";
-    margin-top: -3rem; }
+    margin-top: 0rem; }
   #menu-principal ul {
     font-family: "Agency FB";
     width: 100vw;
