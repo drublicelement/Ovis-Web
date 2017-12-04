@@ -1439,7 +1439,7 @@ ol {
 
 .conocenos .talentos-row .aliados1 {
   width: 50%;
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-left: 2rem;
   margin-top: -3rem;
   font-family: "Helvetica LT Std";
@@ -1465,7 +1465,7 @@ ol {
 
 .conocenos .talentos-row .aliados4 {
   width: 50%;
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-left: 4.5rem;
   margin-top: -3rem;
   font-family: "Helvetica LT Std";
@@ -1473,7 +1473,7 @@ ol {
 
 .conocenos .talentos-row .aliados5 {
   width: 50%;
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-left: 2rem;
   margin-top: -3rem;
   font-family: "Helvetica LT Std";
@@ -1481,13 +1481,14 @@ ol {
 
 .conocenos .talentos-row .aliados6 {
   width: 20%;
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-left: 2rem;
   margin-top: -3rem;
   font-family: "Helvetica LT Std";
   text-align: justify; }
 
 .conocenos .talentos-row .aliados7 {
+  display: none;
   width: 20%;
   padding-top: 2rem;
   padding-left: 4.5rem;

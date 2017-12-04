@@ -415,9 +415,9 @@
 
                         <div class="aliados1">
 
-                            <h4><span><i class="fa fa-caret-down" aria-hidden="true"></i></span>Cesar Campos</h4>
-                            <h6>Periodista y Abogado</h6>
-                            <p>Periodista profesional y abogado colegiado con 20 años de experiencia como director y editor de diversas publicaciones nacionales, programas radiales y de TV. Especializado en temas políticos, jurídico-institucionales, locales e internacionales. También es consultor y asesor en imagen institucional y comunicaciones.</p>
+                            <h4><span><i class="fa fa-caret-down" aria-hidden="true"></i></span>Christian Dammert</h4>
+                            <h6>Marketing</h6>
+                            <p>Licenciado en Marketing de la Universidad de Lima con interés en áreas de Marketing, Innovación, Emprendimiento, Comunicación e Imagen. Socio  fundador de Lúmica Studios, estudio especializado Diseño 3D y 360, Realidad Virtual y Realidad Aumentada hasta Branding Inmobiliario, Fotografía Arquitectónica y Vuelos con Drone.</p>
 
                         </div>
                         <div class="aliados2">
@@ -796,7 +796,7 @@
      $(".st1").removeClass("st3");
     }
         
-   
+   });
    
         ///////////////////////////////
         
@@ -820,7 +820,7 @@
         
         /////////////////////////////////////
         
-        
+     $(window).scroll(function() {        
     if (scroll >= 1900) {
         $(".st0").addClass("st4");
         $(".st1").addClass("st3");
@@ -838,6 +838,8 @@
      $(".st0").removeClass("st8");
      $(".st1").removeClass("st9");
     }
+
+    });
         
         
         /////////////////////////////////////
@@ -845,8 +847,8 @@
    
        //////////////////////////////////////////////
         
-
-    if (scroll >= 3700) {
+        $(window).scroll(function() {    
+    if (scroll >= 3600) {
         $(".st0").addClass("st6");
         $(".st1").addClass("st7");
     }else
