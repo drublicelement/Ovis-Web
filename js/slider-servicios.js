@@ -11,7 +11,7 @@ $(document).ready(function(){
     
     
     //...............................
-     
+    
     $('.slider-ser li').hide();//ocultamos los slides
     $('.slider-ser li:first').show();//mostramos solo el primer slide con li:first seudoclase.
     //$('.paginacion .li1').css({'background-color': 'red'});//Damos estilos al primer item de la p paginacion

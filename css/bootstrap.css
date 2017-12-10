@@ -5958,11 +5958,11 @@ button.close {
 }
 
 .carousel-control-prev {
-  left: -4%;
+  left: 0%;
 }
 
 .carousel-control-next {
-  right: -4%;
+  right: 0%;
 }
 
 .carousel-control-prev-icon,

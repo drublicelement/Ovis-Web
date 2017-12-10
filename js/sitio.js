@@ -19,11 +19,6 @@ var scroll = new SmoothScroll('a[href*="."]', {
 
 
 
-         $('.carousel').carousel({
-  interval: 222500,
-              pause: "false"
-})
-
 
 
 
