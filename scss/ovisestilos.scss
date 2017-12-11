@@ -11855,7 +11855,7 @@ display: none;
     display: none;//ocultar el menu onclick se muestre
     font-family: "Gill Sans MT";
     order:0;
-    background-color:rgba(0,0,0,0.85);
+    background-color:rgba(0,0,0,0.8);
 }
 #menu-principal ul {
     position: relative;
@@ -11866,9 +11866,10 @@ display: none;
     flex-direction: column;
     margin-top:0rem;
     padding-top:7rem;
-    background-color:rgba(0,0,0,0.85);
+    background-color:rgba(0,0,0,0.8);
     text-align: center;
     padding-left: 0;
+    line-height: 3rem;
     z-index: 1;
      
 }
@@ -11878,12 +11879,16 @@ display: none;
     width: 100%;
     font-family: 'Agency FB';
     font-size: 2rem;
-    margin:0px;
+    margin:0;
     color: $general;
     border-right: none;
     border-bottom: 1px solid #ffffff;
     padding-right: 0px;
     background-color:none;
+}
+
+#menu-principal ul li:nth-child(3) {
+   display: none;
 }
 
 #menu-principal ul a:hover,
@@ -11907,6 +11912,12 @@ display: none;
     fill:#000000;
 }
 .bienvenidos .st1{
+    fill:#ffffff;
+}
+.bienvenidos .st4{
+    fill:$general;
+}
+.bienvenidos .st5{
     fill:#ffffff;
 }
  
@@ -12622,7 +12633,7 @@ ol {
 }
 
 ////////////////////////////////////////
-/////////////seccion-ovis800px///////////////
+/////////////seccion-ovis800pxportrait///////////////
 /////////////////////////////////////////
 ///
   
@@ -12642,6 +12653,13 @@ ol {
     .ovis  .st1{
     fill:#ffffff;
 }
+.ovis .st4{
+    fill:$general;
+}
+.ovis .st5{
+    fill:#ffffff;
+}
+
 .ovis {
     position: relative;
     width: 100vw;
@@ -12702,7 +12720,7 @@ ol {
 }
 
 ///////////////////////////////////////////////////////////////
-////////////////////seccion-servicios800px//////////////////////////
+////////////////////seccion-servicios800pxportrait//////////////////////////
 //////////////////////////////////////////////////////////////
 
    .servicios .logonav {
@@ -12719,7 +12737,13 @@ ol {
     fill:$general;
 }
     .servicios  .st1{
+    fill:#ffffff;
+}
+.servicios .st4{
     fill:$general;
+}
+.servicios .st5{
+    fill:#ffffff;
 }
 
 
@@ -13161,7 +13185,7 @@ display: none;
 
 
 ///////////////////////////////////////////////////////////////
-////////////////////seccion-conocenos800px//////////////////////////
+////////////////////seccion-conocenos800pxportrait//////////////////////////
 //////////////////////////////////////////////////////////////
 .conocenos {
     background:none;
@@ -13310,7 +13334,7 @@ ol {
 
 
 ////////////////////////////////////////////////////////
-////////////////seccion-portafolio800px/////////////////////////
+////////////////seccion-portafolio800pxportrait/////////////////////////
 //////////////////////////////////////////////////////////
 
  .portafolio  .logonav {
@@ -13324,14 +13348,20 @@ ol {
 }
 
     .portafolio   .st0{
-    fill:$general;
+    fill:#000000;
 }
     .portafolio   .st1{
     fill:#ffffff;
 }
+    .portafolio   .st4{
+    fill:$general;
+}
+    .portafolio   .st5{
+    fill:#ffffff;
+}
 .portafolio {
     background-image:none;
-    background-color: #000000;
+    background-color: $general;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -13366,10 +13396,10 @@ ol {
 .porta-div1 .porta-titulo {
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.6);
     transition: .4s;
 
 }
@@ -13414,15 +13444,13 @@ ol {
 .porta-div7,.porta-div8,
 .porta-div9,.porta-div10,
 .porta-div11,.porta-div12{
-    margin: 0.5rem;
+    margin: 0rem;
     height: auto;
-    border:2px solid #ffffff;
+    border:none;
 
   }
 .porta-div1 .porta-titulo .porta-lengueta{
-    position: relative;
-    width: 20%;
-    height: auto;   
+    display: none;   
 }
 .portafolio .porta-contenedor h2{
   position:relative;
@@ -13430,7 +13458,7 @@ ol {
   margin-bottom: 2rem;
   margin-left:0rem;
   text-align: center;
-    color:$general;
+    color:$texto;
     font-size:4rem;
     font-family: "Agency FB";
     font-weight: 800;
@@ -13438,8 +13466,7 @@ ol {
 }
 .portafolio .porta-contenedor h2 .fa{
   
-  color:#ffffff;
-  font-size:2rem;
+  display: none
     
 }
 
@@ -13465,7 +13492,7 @@ display:inline;
 }
 
 //////////////////////////////////////////////////////////
-////////////////////seccion-encuentranos800px////////////////////
+////////////////////seccion-encuentranos800pxportrait////////////////////
 //////////////////////////////////////////////////////
 
    .encuentranos .logonav {
@@ -13484,6 +13511,14 @@ display:inline;
     .encuentranos  .st1{
     fill:#ffffff;
 }
+
+.encuentranos .st4{
+    fill:$general;
+}
+.encuentranos .st5{
+    fill:#ffffff;
+}
+
 .encuentranos {
 
     background-image: url(../images/fondo-encuentranoscell.png);
