@@ -9303,9 +9303,9 @@ ol {
     outline: 0;
     opacity: .9; }
   .carousel-control-prev {
-    left: -3%; }
+    left: 0%; }
   .carousel-control-next {
-    right: -3%; }
+    right: 0%; }
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     display: inline-block;
