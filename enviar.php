@@ -6,9 +6,9 @@ $telefono = $_POST["telefono"];
 $empresa = $_POST["empresa"];
 $consulta = $_POST["consulta"];
 $contenido = "Nombre: " . $nombre . "\nE-mail: " . $email . "\nTelefono: " . $telefono . "\nEmpresa: " . $empresa . "\nConsulta: " . $consulta;
-
-mail($destino,"Contacto", $contenido);
-header("Location:gracias.html");
+$asunto = "Contacto desde la Web de Ovis Communication"
+mail($destino,$asunto, $contenido);
+header("Location:gracias.html")
 
 
 
