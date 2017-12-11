@@ -9655,7 +9655,1469 @@ ol {
   .encuentranos .encuentranos-iconos a:hover {
     color: #ffffff; } }
 
-@media screen and (max-width: 800px) and (min-width: 300px) {
+@media screen and (max-width: 800px) and (min-width: 300px) and (orientation: portrait) {
+  .encabezado {
+    width: 100vw;
+    padding: 0rem;
+    margin: 0; }
+  .encabezado .container {
+    width: 100%;
+    height: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+  .encabezado .container .menu-borde {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 0px;
+    margin-top: 0%;
+    padding-top: 0rem;
+    background-color: none;
+    height: auto; }
+  .boton-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    border: 0;
+    font-size: 2rem;
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+  .boton-menu:focus {
+    outline: 0; }
+  #menu-principal {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    font-family: "Gill Sans MT";
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin-left: 2rem; }
+  #menu-principal ul {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Gill Sans MT";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 0rem;
+    padding-top: 7rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    padding-left: 0;
+    z-index: 1; }
+  #menu-principal ul a {
+    position: relative;
+    width: 100%;
+    font-family: 'Agency FB';
+    font-size: 2rem;
+    margin: 0px;
+    color: #E8BB00;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+    padding-right: 0px;
+    background-color: none; }
+  #menu-principal ul a:hover,
+  #menu-principal ul li.active a {
+    color: #EDDA84; }
+  .bienvenidos .logonav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50%;
+    height: auto;
+    z-index: 9999;
+    cursor: pointer; }
+  .bienvenidos .st0 {
+    fill: #000000; }
+  .bienvenidos .st1 {
+    fill: #ffffff; }
+  .bienvenidos {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; }
+  .bienvenidos a .prov {
+    width: 100%;
+    height: auto;
+    background-color: green; }
+  .bienvenidos .carousel-inner {
+    width: 100vw;
+    background-color: #E8BB00;
+    height: 100vh; }
+  .bienvenidos .carousel-inner img {
+    width: 100vw;
+    height: 100vh; }
+  .bienvenidos .slideshow {
+    width: 100%; }
+  .bienvenidos ul,
+  ol {
+    list-style: none; }
+  .bienvenidos .carouselExampleIndicators {
+    display: inline; }
+  .bienvenidos .row {
+    padding: 0;
+    margin: 0; }
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 10%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5; }
+  .carousel-control-prev:focus, .carousel-control-prev:hover,
+  .carousel-control-next:focus,
+  .carousel-control-next:hover {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9; }
+  .carousel-control-prev {
+    left: 0%; }
+  .carousel-control-next {
+    right: 0%; }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: transparent no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("../images/prev-carousel.png"); }
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("../images/next-carousel.png"); }
+  .bienvenidos .inicio1 {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    padding-top: 40%;
+    padding-left: 0;
+    padding-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .bienvenidos .inicio1:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: none; }
+  .bienvenidos .inicio1 h1 {
+    position: relative;
+    color: #000000;
+    font-family: "Agency FB";
+    font-size: 3.5rem;
+    font-weight: bold;
+    -webkit-animation: inicio-sub 1s ease-in-out;
+    animation: inicio-sub 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    z-index: 9999;
+    margin-left: 0rem; }
+  @-webkit-keyframes inicio-sub {
+    from {
+      right: -100%; }
+    to {
+      right: 0%; } }
+  @keyframes inicio-sub {
+    from {
+      right: -100%; }
+    to {
+      right: 0%; } }
+  .bienvenidos .inicio1 .ini-iconos {
+    z-index: 6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0rem;
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .bienvenidos .inicio1 .ini-iconos li img {
+    height: 1.8rem;
+    width: 1.8rem; }
+  .bienvenidos .inicio1 .ini-iconos .iz1,
+  .bienvenidos .inicio1 .ini-iconos .iz2,
+  .bienvenidos .inicio1 .ini-iconos .iz3,
+  .bienvenidos .inicio1 .ini-iconos .iz4,
+  .bienvenidos .inicio1 .ini-iconos .iz5,
+  .bienvenidos .inicio1 .ini-iconos .iz6 {
+    position: relative;
+    z-index: 7;
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: #ffffff;
+    margin: 0 7px;
+    border-radius: 50%; }
+  .bienvenidos .inicio1 .ini-iconos .iz1 {
+    -webkit-animation: iconos 2s linear;
+    animation: iconos 2s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes iconos {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  @keyframes iconos {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  .bienvenidos .inicio1 .ini-iconos .iz2 {
+    -webkit-animation: iconos2 1.7s linear;
+    animation: iconos2 1.7s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes iconos2 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  @keyframes iconos2 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  .bienvenidos .inicio1 .ini-iconos .iz3 {
+    -webkit-animation: iconos3 1.4s linear;
+    animation: iconos3 1.4s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes iconos3 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  @keyframes iconos3 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  .bienvenidos .inicio1 .ini-iconos .iz4 {
+    -webkit-animation: iconos4 1.1s linear;
+    animation: iconos4 1.1s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes iconos4 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  @keyframes iconos4 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  .bienvenidos .inicio1 .ini-iconos .iz5 {
+    -webkit-animation: iconos5 0.8s linear;
+    animation: iconos5 0.8s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes iconos5 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  @keyframes iconos5 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  .bienvenidos .inicio1 .ini-iconos .iz6 {
+    -webkit-animation: iconos6 0.5s linear;
+    animation: iconos6 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes iconos6 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  @keyframes iconos6 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  .bienvenidos .inicio1 h2 {
+    position: relative;
+    left: -100%;
+    color: #000000;
+    font-family: "Agency FB";
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-top: -1.8rem;
+    margin-left: 0rem;
+    -webkit-animation: inicio-1 1s ease-in-out;
+    animation: inicio-1 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    z-index: 9999; }
+  @-webkit-keyframes inicio-1 {
+    from {
+      left: -100%; }
+    to {
+      left: 0%; } }
+  @keyframes inicio-1 {
+    from {
+      left: -100%; }
+    to {
+      left: 0%; } }
+  .bienvenidos .inicio1 h2:after {
+    width: 0%;
+    content: '';
+    left: -113%;
+    top: 6rem;
+    margin-left: 0rem;
+    position: absolute;
+    border-bottom: none;
+    overflow: hidden;
+    z-index: 1; }
+  .bienvenidos .inicio2,
+  .bienvenidos .inicio3,
+  .bienvenidos .inicio4,
+  .bienvenidos .inicio5,
+  .bienvenidos .inicio6 {
+    width: 100%;
+    height: auto;
+    color: white;
+    position: relative;
+    z-index: 9999;
+    padding-top: 9rem; }
+  .bienvenidos .inicio2 h1 {
+    position: relative;
+    color: #000000;
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: "Agency FB";
+    padding-left: 0rem;
+    text-align: center; }
+  .bienvenidos .inicio2 .fa {
+    font-size: 2.5rem; }
+  .bienvenidos .inicio2 .clave-exito {
+    position: relative;
+    right: 0%;
+    color: #ffffff;
+    text-align: left;
+    width: 100%;
+    font-size: 3rem;
+    font-family: "Agency FB";
+    margin-top: -1rem;
+    margin-left: 0rem;
+    padding-left: 0rem;
+    -webkit-animation: clave-exito 1.5s ease-in-out;
+    animation: clave-exito 1.5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    text-align: center; }
+  @-webkit-keyframes clave-exito {
+    from {
+      right: -100%; }
+    to {
+      right: 0%; } }
+  @keyframes clave-exito {
+    from {
+      right: -100%; }
+    to {
+      right: 0%; } }
+  .bienvenidos .inicio3 .h2-slider3:after {
+    display: none; }
+  .bienvenidos .inicio4 .h2-slider4:after {
+    display: none; }
+  .bienvenidos .inicio5 .h2-slider5:after {
+    display: none; }
+  .bienvenidos .inicio6 .h2-slider6:after {
+    display: none; }
+  .bienvenidos .inicio3 .h2-slider3,
+  .bienvenidos .inicio4 .h2-slider4,
+  .bienvenidos .inicio5 .h2-slider5,
+  .bienvenidos .inicio6 .h2-slider6 {
+    color: #000000;
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: "Agency FB";
+    padding-left: 0rem;
+    text-align: center; }
+  .bienvenidos .inicio-subtitulo {
+    position: relative;
+    right: -100%;
+    width: 100%;
+    color: #ffffff;
+    text-shadow: 0.5px 0.5px #565656;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: "Agency FB";
+    padding-left: 0rem;
+    padding-top: 1.5rem;
+    -webkit-animation: inicio-sub 1s ease-in-out;
+    animation: inicio-sub 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    text-align: center; }
+  @keyframes inicio-sub {
+    from {
+      right: -100%; }
+    to {
+      right: 0%; } }
+  .bienvenidos .slider1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0; }
+  .bienvenidos .slider1:after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/bienvenidos-cell1.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    top: 0;
+    -webkit-animation: bienvenidos1 1.5s ease-in-out;
+    animation: bienvenidos1 1.5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes bienvenidos1 {
+    from {
+      right: 0%;
+      opacity: 0; }
+    to {
+      background-image: url(../images/bienvenidos-cell1.jpg);
+      background-size: cover;
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      right: 0%;
+      opacity: 1; } }
+  @keyframes bienvenidos1 {
+    from {
+      right: 0%;
+      opacity: 0; }
+    to {
+      background-image: url(../images/bienvenidos-cell1.jpg);
+      background-size: cover;
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      right: 0%;
+      opacity: 1; } }
+  .bienvenidos .slider2 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/bienvenidos-cell2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-animation: bienvenidos2 1.5s ease-in-out;
+    animation: bienvenidos2 1.5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes bienvenidos2 {
+    from {
+      right: 0%;
+      opacity: 0; }
+    to {
+      background-image: url(../images/bienvenidos-cell2.jpg);
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      right: 0%;
+      opacity: 1; } }
+  @keyframes bienvenidos2 {
+    from {
+      right: 0%;
+      opacity: 0; }
+    to {
+      background-image: url(../images/bienvenidos-cell2.jpg);
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      right: 0%;
+      opacity: 1; } }
+  .bienvenidos .slider3 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/bienvenidos-cell3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-animation: bienvenidos3 1.5s ease-in-out;
+    animation: bienvenidos3 1.5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes bienvenidos3 {
+    from {
+      right: 0%;
+      opacity: 0; }
+    to {
+      background-image: url(../images/bienvenidos-cell3.jpg);
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      right: 0%;
+      opacity: 1; } }
+  @keyframes bienvenidos3 {
+    from {
+      right: 0%;
+      opacity: 0; }
+    to {
+      background-image: url(../images/bienvenidos-cell3.jpg);
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      right: 0%;
+      opacity: 1; } }
+  .bienvenidos .slider4 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/bienvenidos-cell4.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-animation: bienvenidos4 1.5s ease-in-out;
+    animation: bienvenidos4 1.5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes bienvenidos4 {
+    from {
+      opacity: 0; }
+    to {
+      background-image: url(../images/bienvenidos-cell4.jpg);
+      background-size: cover;
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      opacity: 1; } }
+  @keyframes bienvenidos4 {
+    from {
+      opacity: 0; }
+    to {
+      background-image: url(../images/bienvenidos-cell4.jpg);
+      background-size: cover;
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      opacity: 1; } }
+  .bienvenidos .slider5 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/bienvenidos-cell5.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-animation: bienvenidos5 1.5s ease-in-out;
+    animation: bienvenidos5 1.5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes bienvenidos5 {
+    from {
+      right: 0%;
+      opacity: 0; }
+    to {
+      background-image: url(../images/bienvenidos-cell5.jpg);
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      right: 0%;
+      opacity: 1; } }
+  @keyframes bienvenidos5 {
+    from {
+      right: 0%;
+      opacity: 0; }
+    to {
+      background-image: url(../images/bienvenidos-cell5.jpg);
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      right: 0%;
+      opacity: 1; } }
+  .bienvenidos .slider6 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/bienvenidos-cell6.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-animation: bienvenidos6 1.5s ease-in-out;
+    animation: bienvenidos6 1.5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes bienvenidos6 {
+    from {
+      opacity: 0; }
+    to {
+      background-image: url(../images/bienvenidos-cell6.jpg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      opacity: 1; } }
+  @keyframes bienvenidos6 {
+    from {
+      opacity: 0; }
+    to {
+      background-image: url(../images/bienvenidos-cell6.jpg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      opacity: 1; } }
+  .ovis .logonav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50%;
+    height: auto;
+    z-index: 9999;
+    cursor: pointer; }
+  .ovis .st0 {
+    fill: #E8BB00; }
+  .ovis .st1 {
+    fill: #ffffff; }
+  .ovis {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    background-image: url(../images/fondo-cell-ovis.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .ovis .row {
+    margin: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    position: relative;
+    z-index: 5; }
+  .ovis .ovis-divs {
+    padding-top: 25%; }
+  .ovis h2 .titulo-amarillo {
+    color: #E8BB00;
+    font-family: "Agency FB";
+    font-weight: 800; }
+  .ovis h2 .titulo-amarillo2 {
+    color: #E8BB00;
+    font-family: "Agency FB"; }
+  .ovis h2 {
+    color: #ffffff;
+    font-family: "Agency FB";
+    font-size: 1.7rem; }
+  .ovis h2 i {
+    font-size: 1.8rem;
+    vertical-align: middle;
+    color: #E8BB00; }
+  .ovis p {
+    width: 100%;
+    color: #ffffff;
+    text-shadow: 0.5px 0.5px #565656;
+    text-align: justify;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    font-size: 0.95rem; }
+  .servicios .logonav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50%;
+    height: auto;
+    z-index: 9999;
+    cursor: pointer; }
+  .servicios .st0 {
+    fill: #E8BB00; }
+  .servicios .st1 {
+    fill: #E8BB00; }
+  .servicios {
+    min-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; }
+  .servicios .slideshow-ser {
+    position: relative;
+    width: 100vw; }
+  .servicios .paginacion-ser {
+    display: none; }
+  .servicios .paginacion-ser .fondo1 {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #000000;
+    -webkit-animation: fondo1 2s linear;
+    animation: fondo1 2s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes fondo1 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  @keyframes fondo1 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  .servicios .paginacion-ser .fondo2 {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #000000;
+    -webkit-animation: fondo1 1.7s linear;
+    animation: fondo1 1.7s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @keyframes fondo1 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  .servicios .paginacion-ser .fondo3 {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #000000;
+    -webkit-animation: fondo1 1.4s linear;
+    animation: fondo1 1.4s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @keyframes fondo1 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  .servicios .paginacion-ser .fondo4 {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #000000;
+    -webkit-animation: fondo1 1.1s linear;
+    animation: fondo1 1.1s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @keyframes fondo1 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  .servicios .paginacion-ser .fondo5 {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #000000;
+    -webkit-animation: fondo1 0.8s linear;
+    animation: fondo1 0.8s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @keyframes fondo1 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  .servicios .paginacion-ser .fondo6 {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #000000;
+    -webkit-animation: fondo1 0.5s linear;
+    animation: fondo1 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @keyframes fondo1 {
+    from {
+      border-bottom: none;
+      left: -80%; }
+    to {
+      left: 0%; } }
+  .servicios .slider-ser {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    list-style: none; }
+  .servicios .slider-ser .ser5 h5,
+  .servicios .slider-ser .ser7 h5 {
+    color: #E8BB00;
+    font-weight: 600; }
+  .servicios .slider-ser .ser5 p,
+  .servicios .slider-ser .ser7 p {
+    margin-top: -20px; }
+  .servicios .slider-ser .li-ser1 .ser1,
+  .servicios .slider-ser .li-ser2 .ser2,
+  .servicios .slider-ser .li-ser3 .ser3,
+  .servicios .slider-ser .li-ser4 .ser4,
+  .servicios .slider-ser .li-ser5 .ser5,
+  .servicios .slider-ser .li-ser6 .ser6,
+  .servicios .slider-ser .li-ser7 .ser7 {
+    padding-top: 30rem;
+    height: 100%;
+    overflow: hidden; }
+  .servicios .slider-ser .li-ser1 h1 {
+    top: 0;
+    right: -100%;
+    font-size: 9.5rem;
+    font-family: "Agency FB";
+    font-weight: 800;
+    -webkit-animation: servicioh1 0.5s linear;
+    animation: servicioh1 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1; }
+  @-webkit-keyframes servicioh1 {
+    from {
+      right: -100%; }
+    to {
+      right: 0; } }
+  @keyframes servicioh1 {
+    from {
+      right: -100%; }
+    to {
+      right: 0; } }
+  .servicios .slider-ser .ser1,
+  .servicios .slider-ser .ser2,
+  .servicios .slider-ser .ser3,
+  .servicios .slider-ser .ser4,
+  .servicios .slider-ser .ser5,
+  .servicios .slider-ser .ser6,
+  .servicios .slider-ser .ser7 {
+    display: none; }
+  .servicios .slider-ser .li-ser1 {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/servicios-cell1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right; }
+  .servicios .slider-ser .li-ser2 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    background-image: url(../images/servicios-cell2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    -webkit-animation: none;
+    animation: none;
+    overflow: hidden;
+    z-index: 0; }
+  .servicios .slider-ser .li-ser3 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    background-image: url(../images/servicios-cell3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    -webkit-animation: none;
+    animation: none;
+    overflow: hidden;
+    z-index: 0; }
+  .servicios .slider-ser .li-ser4 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    background-image: url(../images/servicios-cell4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    -webkit-animation: none;
+    animation: none;
+    overflow: hidden;
+    z-index: 0; }
+  .servicios .slider-ser .li-ser5 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    background-image: url(../images/servicios-cell5.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    -webkit-animation: none;
+    animation: none;
+    overflow: hidden;
+    z-index: 0; }
+  .servicios .slider-ser .li-ser6 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    background-image: url(../images/servicios-cell6.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    -webkit-animation: none;
+    animation: none;
+    overflow: hidden;
+    z-index: 0; }
+  .servicios .slider-ser .li-ser7 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    background-image: url(../images/servicios-cell7.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    -webkit-animation: none;
+    animation: none;
+    overflow: hidden;
+    z-index: 0; }
+  .servicios .slider-ser .li-ser2 h2,
+  .servicios .slider-ser .li-ser3 h2,
+  .servicios .slider-ser .li-ser4 h2,
+  .servicios .slider-ser .li-ser5 h2,
+  .servicios .slider-ser .li-ser6 h2,
+  .servicios .slider-ser .li-ser7 h2 {
+    font-size: 4rem;
+    font-family: "Agency FB";
+    font-weight: 800; }
+  .servicios .slider-ser .li-ser2 .titulo-amarillo,
+  .servicios .slider-ser .li-ser3 .titulo-amarillo,
+  .servicios .slider-ser .li-ser4 .titulo-amarillo,
+  .servicios .slider-ser .li-ser5 .titulo-amarillo,
+  .servicios .slider-ser .li-ser6 .titulo-amarillo,
+  .servicios .slider-ser .li-ser7 .titulo-amarillo {
+    color: #E8BB00;
+    font-family: "Agency FB";
+    font-weight: 800; }
+  .servicios .slider-ser .li-ser2 p,
+  .servicios .slider-ser .li-ser3 p,
+  .servicios .slider-ser .li-ser4 p,
+  .servicios .slider-ser .li-ser5 p,
+  .servicios .slider-ser .li-ser6 p,
+  .servicios .slider-ser .li-ser7 p {
+    width: 50%;
+    padding-top: 1rem;
+    color: #000000;
+    font-size: 1.3rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    text-align: justify; }
+  .active {
+    background-color: #E9BC00 !important; }
+  .slideshow-ser .slider-ser li img {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh; }
+  .slideshow-ser .paginacion-ser li {
+    font-size: 20px;
+    margin: 2px 10px;
+    cursor: pointer;
+    z-index: 9999;
+    position: relative; }
+  .left-ser,
+  .right-ser {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 100;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer; }
+  .left-ser {
+    left: 10px; }
+  .left-ser span {
+    width: 30px;
+    font-size: 0rem;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .right-ser {
+    right: 10px; }
+  .right-ser span {
+    width: 30px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .conocenos {
+    background: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: none; }
+  .conocenos .slideshow-co {
+    position: relative;
+    width: 100%; }
+  .conocenos ul,
+  ol {
+    list-style: none; }
+  .slideshow-co .slider-co {
+    padding-top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh; }
+  .slideshow-co .slider-co li {
+    width: 100%;
+    height: 100%; }
+  .slideshow-co .slider-co .conocenos-cell1 {
+    background-image: url(../images/conocenos-cell1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100%;
+    overflow: hidden; }
+  .slideshow-co .slider-co .conocenos-cell2 {
+    background-image: url(../images/conocenos-cell2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100%;
+    overflow: hidden; }
+  .slideshow-co .slider-co .conocenos-cell3 {
+    background-image: url(../images/conocenos-cell3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100%;
+    overflow: hidden; }
+  .slideshow-co .slider-co .conocenos-cell4 {
+    background-image: url(../images/conocenos-cell4.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100%;
+    overflow: hidden; }
+  .slideshow-co .slider-co .conocenos-cell5 {
+    background-image: url(../images/conocenos-cell5.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100%;
+    overflow: hidden; }
+  .slideshow-co .slider-co li img {
+    display: none; }
+  .conocenos .talentos-row {
+    display: none; }
+  .conocenos .aliados-row {
+    display: none; }
+  .left-co {
+    position: absolute;
+    top: 0rem;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    width: 15%;
+    left: 0px;
+    z-index: 5; }
+  .right-co {
+    position: absolute;
+    top: 0rem;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    width: 15%;
+    right: 0px;
+    z-index: 5; }
+  .left-co img {
+    position: relative;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .right-co img {
+    position: relative;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .portafolio .logonav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50%;
+    height: auto;
+    z-index: 9999;
+    cursor: pointer; }
+  .portafolio .st0 {
+    fill: #E8BB00; }
+  .portafolio .st1 {
+    fill: #ffffff; }
+  .portafolio {
+    background-image: none;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    overflow: hidden; }
+  .portafolio .row {
+    margin: 0; }
+  .portafolio .porta-contenedor {
+    padding-top: 5rem; }
+  .porta-div1 .porta-imagen {
+    position: relative;
+    overflow: hidden; }
+  .porta-div1 .porta-imagen img {
+    width: 100%; }
+  .porta-div1 .porta-titulo {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+  .porta-div1 .porta-titulo h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    color: #E9BC00;
+    font-family: "Agency FB";
+    font-weight: 800;
+    font-size: 3rem; }
+  .porta-div1 .porta-titulo h6 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    color: #ffffff;
+    font-family: "Agency FB";
+    font-weight: 100;
+    font-size: 2rem; }
+  .porta-div1 .porta-imagen:hover .porta-titulo {
+    cursor: pointer;
+    left: 0; }
+  .porta-div1, .porta-div2,
+  .porta-div3, .porta-div4,
+  .porta-div5, .porta-div6,
+  .porta-div7, .porta-div8,
+  .porta-div9, .porta-div10,
+  .porta-div11, .porta-div12 {
+    margin: 0.5rem;
+    height: auto;
+    border: 2px solid #ffffff; }
+  .porta-div1 .porta-titulo .porta-lengueta {
+    position: relative;
+    width: 20%;
+    height: auto; }
+  .portafolio .porta-contenedor h2 {
+    position: relative;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    margin-left: 0rem;
+    text-align: center;
+    color: #E8BB00;
+    font-size: 4rem;
+    font-family: "Agency FB";
+    font-weight: 800; }
+  .portafolio .porta-contenedor h2 .fa {
+    color: #ffffff;
+    font-size: 2rem; }
+  .portafolio .porta-logos {
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #ffffff; }
+  .portafolio .porta-logos .porta-normal {
+    display: none; }
+  .portafolio .porta-logos .porta-cell {
+    display: inline; }
+  .encuentranos .logonav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50%;
+    height: auto;
+    z-index: 9999;
+    cursor: pointer; }
+  .encuentranos .st0 {
+    fill: #000000; }
+  .encuentranos .st1 {
+    fill: #ffffff; }
+  .encuentranos {
+    background-image: url(../images/fondo-encuentranoscell.png);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0px;
+    max-width: 100%;
+    overflow: hidden; }
+  .encuentranos .formulario {
+    display: none; }
+  .encuentranos .row {
+    margin: 0;
+    padding: 0; }
+  .encuentranos .encuentranos1 {
+    position: relative;
+    background: none;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Agency FB";
+    padding-top: 6rem;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 5;
+    -webkit-animation: none;
+    animation: none; }
+  .encuentranos .btn-primary {
+    color: #000000;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    margin-left: 50%;
+    margin-top: 2rem;
+    background-color: #E8BB00;
+    border-color: transparent;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer; }
+  .encuentranos .btn-primary:hover {
+    background-color: #ffffff; }
+  .encuentranos .encuentranos-iconos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    font-family: "Agency FB";
+    padding-left: 0;
+    margin-top: -2.4rem; }
+  .encuentranos .encuentranos-iconos li {
+    width: auto;
+    font-family: "Agency FB";
+    font-weight: light;
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: left; }
+  .encuentranos .encuentranos-iconos li img {
+    width: 1.2rem;
+    height: auto;
+    margin-right: 1rem; }
+  .encuentranos .encuentranos-iconos li .fa {
+    margin-right: 1rem; }
+  .encuentranos h1 {
+    font-family: "Agency FB";
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #000000; }
+  .encuentranos .encuentranos-iconos a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+  .encuentranos .encuentranos-iconos a:hover {
+    color: #ffffff; } }
+
+@media screen and (max-width: 800px) and (min-width: 300px) and (orientation: landscape) {
   .encabezado {
     width: 100vw;
     padding: 0rem;
@@ -9839,7 +11301,7 @@ ol {
     z-index: 5;
     width: 100%;
     height: 100vh;
-    padding-top: 40%;
+    padding-top: 0%;
     padding-left: 0;
     padding-right: 0;
     display: -webkit-box;
@@ -9848,7 +11310,8 @@ ol {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    background-color: red; }
   .bienvenidos .inicio1:after {
     content: '';
     position: absolute;
@@ -10174,7 +11637,7 @@ ol {
       right: 0%;
       opacity: 0; }
     to {
-      background-image: url(../images/bienvenidos-cell1.jpg);
+      background-image: none;
       background-size: cover;
       background-position: bottom right;
       background-repeat: no-repeat;
@@ -10185,7 +11648,7 @@ ol {
       right: 0%;
       opacity: 0; }
     to {
-      background-image: url(../images/bienvenidos-cell1.jpg);
+      background-image: none;
       background-size: cover;
       background-position: bottom right;
       background-repeat: no-repeat;
