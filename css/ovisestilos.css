@@ -9720,8 +9720,7 @@ ol {
     -webkit-box-ordinal-group: 1;
     -ms-flex-order: 0;
     order: 0;
-    background-color: rgba(0, 0, 0, 0.85);
-    margin-left: 2rem; }
+    background-color: rgba(0, 0, 0, 0.85); }
   #menu-principal ul {
     position: relative;
     width: 100vw;
