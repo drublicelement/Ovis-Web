@@ -115,35 +115,28 @@ body {
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     height: auto;//nota1 se deja en auto valor 50px
-}
-
-.encabezado .logonav {
-    width: 15%;
-    height: auto;    
-}
-
-.st0{
-    fill:#000000;
-}
-.st1{
-    fill:#ffffff;
+    position:absolute;
+    top:10px;
+    right: 20px;
+    
 }
 ////////////////////////////////////////
 //////menu principal/////////////////////
 ////////////////////////////////////////
 .boton-menu {
-  position:relative;
   z-index:9999;
     border: 0;
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 0;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    background: transparent;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    background:rgba(0,0,0,0.5);
+    border-radius:10px;
     color: $texto2;
     cursor: pointer;
+    order:1;
 }
 .boton-menu:focus {
     outline: 0;
@@ -151,18 +144,20 @@ body {
 #menu-principal {
     display: none;//ocultar el menu onclick se muestre
     font-family: "Gill Sans MT";
+    order:0;
 }
 #menu-principal ul {
     font-family: "Gill Sans MT";
      display: flex;
     flex-direction: row;
     margin-top: 20px;
+
 }
 
 #menu-principal ul a {
     font-family: "Gill Sans MT";
     font-size: 1rem;
-    margin: 20px;
+    margin: 10px;
     color: #ffffff;
     border-right: 1px solid #ffffff;
     padding-right: 20px;
@@ -177,11 +172,25 @@ body {
 ////////////seccion-bienvenidos///////////
 ///////////////////////////////////////
 
-.bienvenidos .bienvenidos-cell{
-display: none;
+
+    .bienvenidos .logonav {
+    position:absolute;
+    top:20px;
+    left: 20px;
+    width: 15%;
+    height: auto; 
+    z-index: 9999; 
+    cursor:pointer;  
 }
 
+.bienvenidos .st0{
+    fill:#000000;
+}
+.bienvenidos .st1{
+    fill:#ffffff;
+}
 .bienvenidos {
+    position: relative;
   max-width: 100%;
     width: 100vw;
     height: 100vh;
@@ -214,6 +223,72 @@ ol {
     list-style: none;
 
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+    
+    
+}
+
+.carousel-control-prev:focus, .carousel-control-prev:hover,
+.carousel-control-next:focus,
+.carousel-control-next:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.carousel-control-prev {
+  left: 0%;
+}
+
+.carousel-control-next {
+  right: 0%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    
+  display: inline-block;
+  width: 53px;
+  height: 53px;
+  background: transparent no-repeat center center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+   
+}
+
+.carousel-control-prev-icon {
+     
+    background-color: rgba(0,0,0,0.8);
+  background-image: url("../images/prev-carousel.png");
+}
+
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.8);
+  background-image: url("../images/next-carousel.png");
+}
+
 //---------------------------------------
 // partes del slider inicio1,inicio2,inicio3,inicio4,inicio5,inicio6
 //---------------------------------------
@@ -939,6 +1014,23 @@ ol {
 ////////////////////////////////////////
 /////////////seccion-ovis///////////////
 /////////////////////////////////////////
+
+    .ovis .logonav {
+    position:absolute;
+    top:20px;
+    left: 20px;
+    width: 15%;
+    height: auto; 
+    z-index: 9999; 
+    cursor:pointer;  
+}
+
+.ovis .st0{
+    fill:$general;
+}
+.ovis .st1{
+    fill:#ffffff;
+}
 .ovis {
     position: relative;
     width: 100vw;
@@ -998,6 +1090,23 @@ ol {
 ////////////////////seccion-servicios//////////////////////////
 //////////////////////////////////////////////////////////////
 
+
+    .servicios .logonav {
+    position:absolute;
+    top:20px;
+    left: 20px;
+    width: 15%;
+    height: auto; 
+    z-index: 9999; 
+    cursor:pointer;  
+}
+
+.servicios .st0{
+    fill:#000000;
+}
+.servicios .st1{
+    fill:#000000;
+}
 .servicios {
     min-width: 100%;
     width: 100vw;
@@ -1013,7 +1122,7 @@ ol {
 .servicios .paginacion-ser {
 
     position: absolute;
-    top: 39%;
+    top: 35%;
     left: 6%;
     display: flex;
     list-style: none;
@@ -1495,6 +1604,23 @@ ol {
 ///////////////////////////////////////////////////////////////
 ////////////////////seccion-conocenos//////////////////////////
 //////////////////////////////////////////////////////////////
+
+    .conocenos .logonav {
+    position:absolute;
+    top:20px;
+    left: 20px;
+    width: 15%;
+    height: auto; 
+    z-index: 9999; 
+    cursor:pointer;  
+}
+
+.conocenos .st0{
+    fill:#000000;
+}
+.conocenos .st1{
+    fill:#ffffff;
+}
 .conocenos {
     background: url(../images/fondo-conocenos.jpg);
     background-position: center;
@@ -1525,7 +1651,7 @@ ol {
 }
 
 .slideshow-co .slider-co {
-  padding-top:7.5%;
+  padding-top:10%;
     width: 100vw;
     height: 100vh;
 }
@@ -1631,15 +1757,17 @@ ol {
 }
 
 .conocenos .talentos-row p {
+    font-size: 1.2rem;
     color: #000000;
     font-weight: 200;
-    line-height:1.1rem;
+    line-height:1.5rem;
 }
 
 .conocenos .aliados-row p {
+    font-size: 1.2rem;
     color: #000000;
     font-weight: 200;
-    line-height:1.1rem;
+    line-height:1.5rem;
 }
 
 
@@ -1792,6 +1920,24 @@ ol {
 ////////////////////////////////////////////////////////
 ////////////////seccion-portafolio/////////////////////////
 //////////////////////////////////////////////////////////
+
+
+    .portafolio .logonav {
+    position:absolute;
+    top:20px;
+    left: 20px;
+    width: 15%;
+    height: auto; 
+    z-index: 9999; 
+    cursor:pointer;  
+}
+
+.portafolio .st0{
+    fill:$general;
+}
+.portafolio .st1{
+    fill:#ffffff;
+}
 .portafolio {
     background: url(../images/fondo-portafolio.jpg);
     background-repeat: no-repeat;
@@ -1809,7 +1955,7 @@ ol {
 }
 
 .portafolio .porta-contenedor {
-    padding-top: 18rem; //background-color: green;
+    padding-top: 20rem; //background-color: green;
 }
 
 
@@ -1921,6 +2067,25 @@ display: none;
 //////////////////////////////////////////////////////////
 ////////////////////seccion-encuentranos////////////////////
 //////////////////////////////////////////////////////
+
+
+
+    .encuentranos .logonav {
+    position:absolute;
+    top:20px;
+    left: 20px;
+    width: 15%;
+    height: auto; 
+    z-index: 9999; 
+    cursor:pointer;  
+}
+
+.encuentranos .st0{
+    fill:$general;
+}
+.encuentranos .st1{
+    fill:#ffffff;
+}
 .encuentranos {
 
     background-image: url(../images/fondo-encuentranos.jpg);
@@ -2342,12 +2507,12 @@ display: none;
 
 //resto de sliders con h2
 .bienvenidos .inicio3  .h2-slider3:after{
-    width: 55%;
+    width: 44%;
     content: '';
     top:70%;
     left:-100%;
     position:absolute;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
     
     animation: linea 3s ease;
     animation-fill-mode: forwards;
@@ -2367,12 +2532,12 @@ display: none;
     }
 }
 .bienvenidos .inicio4  .h2-slider4:after{
-    width: 58%;
+    width: 45%;
     content: '';
     top:70%;
     left:-100%;
     position:absolute;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
     
     animation: linea 3s ease;
     animation-fill-mode: forwards;
@@ -2392,12 +2557,12 @@ display: none;
     }
 }
 .bienvenidos .inicio5 .h2-slider5:after{
-    width: 75%;
+    width: 58%;
     content: '';
     top:70%;
     left:-100%;
     position:absolute;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
     
     animation: linea 3s ease;
     animation-fill-mode: forwards;
@@ -2417,12 +2582,12 @@ display: none;
     }
 }
 .bienvenidos .inicio6 .h2-slider6:after{
-    width: 63%;
+    width: 50%;
     content: '';
     top:70%;
     left:-100%;
     position:absolute;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
     
     animation: linea 3s ease;
     animation-fill-mode: forwards;
@@ -2439,6 +2604,7 @@ display: none;
     }
     
     100% {
+
         left:0%;
         
     }
@@ -3315,7 +3481,7 @@ ol {
 }
 
 .slideshow-co .slider-co {
-  padding-top:8%;
+  padding-top:9%;
     width: 100vw;
     height: 100vh;
 }
@@ -3985,6 +4151,432 @@ display: none;
 }
 
 }
+//////////////////////////////////////////////////////////
+///seccion-conocenos1600px////////////////////////////////
+//////////////////////////////////////////////////////////
+
+.conocenos {
+    background: url(../images/fondo-conocenos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.conocenos .slideshow-co {
+    position: relative;
+    width: 100%;
+
+}
+
+.conocenos ul,
+ol {
+    list-style: none;
+}
+
+.slideshow-co .slider-co li img {
+    max-width: 100%;
+    width: 100vw;
+    height:auto;
+}
+
+.slideshow-co .slider-co {
+  padding-top:9%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.slideshow-co .slider-co li {
+    width: 100%;
+    height: 100%;
+}
+
+//altura definida para la imagen de conocenos en slider li conocenos
+.slideshow-co .slider-co li img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0%;
+    z-index: 1;
+}
+
+
+//primer li de conocenos talentos del 1 al 5 
+.conocenos .talentos-row .talentos1 {
+    width: 50%;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    margin-left: 0rem;
+    margin-top: -7rem;
+    text-align: center0.5
+}
+
+.conocenos .talentos-row .talentos2 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+.conocenos .talentos-row .talentos3 {
+
+   width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+.conocenos .talentos-row .talentos4 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    margin-left: 0rem;
+    margin-top: -7rem;
+    text-align: center;
+}
+
+.conocenos .talentos-row .talentos5 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    margin-left: 0rem;
+    margin-top: -7rem;
+    text-align: center;
+}
+
+
+.conocenos .talentos-row .talentos1 h6,
+.conocenos .talentos-row .talentos2 h6 {
+
+    font-family: "Agency FB";
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.conocenos .talentos-row .talentos3 h6,
+.conocenos .talentos-row .talentos4 h6,
+.conocenos .talentos-row .talentos5 h6 {
+
+    font-family: "Agency FB";
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #000000;
+}
+.conocenos .talentos-row .talentos1 h4 .fa,
+.conocenos .talentos-row .talentos2 h4 .fa,
+.conocenos .talentos-row .talentos4 h4 .fa,
+.conocenos .talentos-row .talentos5 h4 .fa,
+.conocenos .talentos-row .talentos3 h4 .fa{
+    color:#000000;
+}
+
+.conocenos .aliados-row .aliados1 h4 .fa,
+.conocenos .aliados-row .aliados2 h4 .fa,
+.conocenos .aliados-row .aliados3 h4 .fa,
+.conocenos .aliados-row .aliados6 h4 .fa,
+.conocenos .aliados-row .aliados7 h4 .fa,
+.conocenos .aliados-row .aliados4 h4 .fa,
+.conocenos .aliados-row .aliados5 h4 .fa{
+    color:#000000;
+}
+
+.conocenos .talentos-row p {
+    color: #000000;
+    font-weight: 200;
+    line-height:1.2rem;
+}
+
+.conocenos .aliados-row p {
+    color: #000000;
+    font-weight: 200;
+    line-height:1.2rem;
+}
+
+
+
+//segundos  li de conocenos aliados del 1 al 5 
+.conocenos .aliados-row .aliados1 {
+     width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    text-align: center;
+
+}
+
+.conocenos .aliados-row .aliados2 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    margin-left: 0rem;
+    margin-top: -7rem;
+    text-align: center;
+}
+
+.conocenos .aliados-row .aliados3 {
+    width: 50%;
+   padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    margin-left: 0rem;
+    margin-top: -7rem;
+    text-align: center;
+}
+
+.conocenos .aliados-row .aliados4 {
+     width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+.conocenos .aliados-row .aliados5 {
+  width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+.conocenos .aliados-row .aliados6 {
+      width: 20%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+.conocenos .aliados-row .aliados7 {
+    display: none;
+    width: 20%;
+   padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    margin-left: 0rem;
+    margin-top: -7rem;
+    text-align: center;
+}
+
+.conocenos .aliados-row .aliados1 h6,
+.conocenos .aliados-row .aliados2 h6,
+.conocenos .aliados-row .aliados3 h6,
+.conocenos .aliados-row .aliados6 h6,
+.conocenos .aliados-row .aliados7 h6,
+.conocenos .aliados-row .aliados4 h6,
+.conocenos .aliados-row .aliados5 h6  {
+
+    font-family: "Agency FB";
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.conocenos .talentos-row h4 {
+    font-family: "Agency FB";
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.conocenos .aliados-row h4 {
+    font-family: "Agency FB";
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+//altura definida de el contenido de slider li conocenos
+.conocenos .talentos-row {
+    position: relative;
+    display: flex;
+    top:2%;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    z-index: 2;
+}
+
+
+.conocenos .aliados-row {
+    position: relative;
+    display: flex;
+    top:2%;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    z-index: 2;
+}
+
+
+.left-co {
+    position: absolute;
+    top: 0rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 5%;
+    left: 0px;
+    z-index: 5;
+}
+
+.right-co {
+    position: absolute;
+    top: 0rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 5%;
+    right: 0px;
+    z-index: 5;
+}
+
+.left-co img{
+    position: relative;
+    left: 45%;
+    background-color: rgba(0,0,0,0.5)   
+}
+.right-co  img{
+    position: relative;
+    right: 0%;
+    background-color: rgba(0,0,0,0.5)   
+}
+
+//////////////////////////////////////////////////////////
+////////////////////seccion-encuentranos1600px////////////////////
+//////////////////////////////////////////////////////
+.encuentranos {
+
+    background-image: url(../images/fondo-encuentranos.jpg);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    
+
+}
+
+.encuentranos .form-group {
+    display: flex;
+    padding-top: 20px;
+}
+.encuentranos .form-group input,
+.encuentranos .form-group textarea {
+    width: 30rem;
+    margin-left: 6rem;
+ 
+}
+.encuentranos .form-group label {
+    width: 20px;
+
+    
+}
+.encuentranos .formulario {
+    position: relative;
+    padding-top: 9rem;
+    font-size: 1.6rem;
+    color: $texto2;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    z-index: 5;
+}
+
+.encuentranos .encuentranos1 {
+    position: relative;
+    background: url(../images/encuentranos-flecha.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 70vw;
+    height: 80vh;
+    color: $texto2;
+    font-size: 3rem;
+    font-family: "Agency FB";
+    padding-top: 10rem;
+    z-index: 5;
+
+}
+
+.encuentranos .btn-primary {
+    color: $texto;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    margin-left: 50%;
+    margin-top: 2rem;
+    background-color: $general;
+    border-color: transparent;
+    transition: all .5s ease;
+    cursor: pointer;
+    
+}
+.encuentranos .btn-primary:hover {
+  background-color:#ffffff;
+}
+
+.encuentranos .encuentranos-iconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-family: "Agency FB";
+    padding-left: 0;
+
+    
+}
+.encuentranos .encuentranos-iconos li{
+    width: auto;
+    font-family: "Agency FB";
+    font-weight: light;
+    font-size: 1.6rem;
+    color: $texto;
+    line-height: 2.2rem;
+     padding-left: 3rem;
+    padding-right:3rem;  
+}
+.encuentranos .encuentranos-iconos li img{
+    width: 1.7rem;
+    height: auto;
+    margin-right: 1rem;
+}
+.encuentranos .encuentranos-iconos li .fa{
+    
+    margin-right: 1rem;
+}
+
+
+
+.encuentranos h1{
+    font-family: "Agency FB";
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:3rem;
+}
+
+.encuentranos .encuentranos-iconos  a{
+    text-decoration: none;
+    cursor:pointer;
+    color:#000000;
+    transition: all .5s ease;
+}
+.encuentranos .encuentranos-iconos  a:hover{
+  
+    color:#ffffff;
+}
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -5258,7 +5850,7 @@ ol {
 }
 
 .slideshow-co .slider-co {
-  padding-top:8%;
+  padding-top:7%;
     width: 100vw;
     height: 100vh;
 }
@@ -5366,13 +5958,13 @@ ol {
 .conocenos .talentos-row p {
     color: #000000;
     font-weight: 200;
-    line-height:1.1rem;
+    line-height:1.2rem;
 }
 
 .conocenos .aliados-row p {
     color: #000000;
     font-weight: 200;
-    line-height:1.1rem;
+    line-height:1.2rem;
 }
 
 
@@ -5389,7 +5981,7 @@ ol {
 
 .conocenos .aliados-row .aliados2 {
     width: 50%;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     padding-right: 0.5rem;
     font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
     margin-left: 0rem;
@@ -5473,8 +6065,8 @@ ol {
     position: relative;
     display: flex;
     top:2%;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
     z-index: 2;
 }
 
@@ -5483,8 +6075,8 @@ ol {
     position: relative;
     display: flex;
     top:2%;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
     z-index: 2;
 }
 
@@ -7363,7 +7955,7 @@ ol {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%)translateY(-50%);
     color: #E9BC00;
@@ -9149,7 +9741,7 @@ ol {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%)translateY(-50%);
     color: #E9BC00;
@@ -9279,7 +9871,7 @@ display: none;
     color: $texto2;
     font-size: 3rem;
     font-family: "Agency FB";
-    padding-top: 6rem;
+    padding-top: 5rem;
     z-index: 5;
 
 }
@@ -9336,7 +9928,7 @@ display: none;
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom:3rem;
+    margin-bottom:1rem;
 }
 
 .encuentranos .encuentranos-iconos  a{
@@ -10989,13 +11581,13 @@ ol {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%)translateY(-50%);
     color: #E9BC00;
     font-family: "Agency FB";
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .porta-div1 .porta-titulo h6 {
     width: 100%;
@@ -11172,7 +11764,7 @@ display: none;
 
 .encuentranos h1{
     font-family: "Agency FB";
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
     margin-bottom:3rem;
