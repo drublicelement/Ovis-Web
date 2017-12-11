@@ -9291,10 +9291,11 @@ ol {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 15%;
+    width: 10%;
     color: #fff;
     text-align: center;
-    opacity: 0.5; }
+    opacity: 0.5;
+    background-color: red; }
   .carousel-control-prev:focus, .carousel-control-prev:hover,
   .carousel-control-next:focus,
   .carousel-control-next:hover {
