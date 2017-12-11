@@ -11820,6 +11820,9 @@ display: none;
     padding-top: 0rem;
     background-color:none;
     height: auto;//nota1 se deja en auto valor 50px
+    position:absolute;
+    top:0px;
+    right: 0px;
 
 }
 
@@ -11828,8 +11831,8 @@ display: none;
 ////////////////////////////////////////
 .boton-menu {
   position:absolute;
-  top:10px;
-  right: 10px;
+  top:20px;
+  right: 30px;
   z-index:9999;
     border: 0;
     font-size: 2rem;
