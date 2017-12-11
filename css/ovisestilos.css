@@ -9294,8 +9294,7 @@ ol {
     width: 10%;
     color: #fff;
     text-align: center;
-    opacity: 0.5;
-    background-color: red; }
+    opacity: 0.5; }
   .carousel-control-prev:focus, .carousel-control-prev:hover,
   .carousel-control-next:focus,
   .carousel-control-next:hover {
