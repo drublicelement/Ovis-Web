@@ -10264,14 +10264,14 @@ ol {
     align-items: center;
     cursor: pointer; }
   .left-ser {
-    left: 0px; }
+    left: 10px; }
   .left-ser span {
     width: 30px;
     font-size: 0rem;
     padding: 0px;
     background-color: rgba(0, 0, 0, 0.5); }
   .right-ser {
-    right: 0px; }
+    right: 10px; }
   .right-ser span {
     width: 30px;
     padding: 0px;
