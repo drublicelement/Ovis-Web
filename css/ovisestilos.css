@@ -9865,6 +9865,18 @@ ol {
     font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
     font-weight: 100;
     font-size: 0.95rem; }
+  .servicios .logonav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50%;
+    height: auto;
+    z-index: 9999;
+    cursor: pointer; }
+  .servicios .st0 {
+    fill: #E8BB00; }
+  .servicios .st1 {
+    fill: #E8BB00; }
   .servicios {
     min-width: 100%;
     width: 100vw;
@@ -10058,26 +10070,15 @@ ol {
     max-width: 100%;
     width: 100vw;
     height: 100vh;
+    right: 0;
     background-image: url(../images/servicios-cell2.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    -webkit-animation: ser2 0.8s linear;
-    animation: ser2 0.8s linear;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    -webkit-animation: none;
+    animation: none;
     overflow: hidden;
     z-index: 0; }
-  @-webkit-keyframes ser2 {
-    from {
-      right: -100%; }
-    to {
-      right: 0; } }
-  @keyframes ser2 {
-    from {
-      right: -100%; }
-    to {
-      right: 0; } }
   .servicios .slider-ser .li-ser3 {
     position: relative;
     padding: 0;
@@ -10085,21 +10086,15 @@ ol {
     max-width: 100%;
     width: 100vw;
     height: 100vh;
+    right: 0;
     background-image: url(../images/servicios-cell3.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    -webkit-animation: ser2 0.8s linear;
-    animation: ser2 0.8s linear;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    -webkit-animation: none;
+    animation: none;
     overflow: hidden;
     z-index: 0; }
-  @keyframes ser2 {
-    from {
-      right: -100%; }
-    to {
-      right: 0; } }
   .servicios .slider-ser .li-ser4 {
     position: relative;
     padding: 0;
@@ -10107,21 +10102,15 @@ ol {
     max-width: 100%;
     width: 100vw;
     height: 100vh;
+    right: 0;
     background-image: url(../images/servicios-cell4.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    -webkit-animation: ser2 0.8s linear;
-    animation: ser2 0.8s linear;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    -webkit-animation: none;
+    animation: none;
     overflow: hidden;
     z-index: 0; }
-  @keyframes ser2 {
-    from {
-      right: -100%; }
-    to {
-      right: 0; } }
   .servicios .slider-ser .li-ser5 {
     position: relative;
     padding: 0;
@@ -10129,21 +10118,15 @@ ol {
     max-width: 100%;
     width: 100vw;
     height: 100vh;
+    right: 0;
     background-image: url(../images/servicios-cell5.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    -webkit-animation: ser2 0.8s linear;
-    animation: ser2 0.8s linear;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    -webkit-animation: none;
+    animation: none;
     overflow: hidden;
     z-index: 0; }
-  @keyframes ser2 {
-    from {
-      right: -100%; }
-    to {
-      right: 0; } }
   .servicios .slider-ser .li-ser6 {
     position: relative;
     padding: 0;
@@ -10151,21 +10134,15 @@ ol {
     max-width: 100%;
     width: 100vw;
     height: 100vh;
+    right: 0;
     background-image: url(../images/servicios-cell6.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    -webkit-animation: ser2 0.8s linear;
-    animation: ser2 0.8s linear;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    -webkit-animation: none;
+    animation: none;
     overflow: hidden;
     z-index: 0; }
-  @keyframes ser2 {
-    from {
-      right: -100%; }
-    to {
-      right: 0; } }
   .servicios .slider-ser .li-ser7 {
     position: relative;
     padding: 0;
@@ -10173,21 +10150,15 @@ ol {
     max-width: 100%;
     width: 100vw;
     height: 100vh;
+    right: 0;
     background-image: url(../images/servicios-cell7.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    -webkit-animation: ser2 0.8s linear;
-    animation: ser2 0.8s linear;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    -webkit-animation: none;
+    animation: none;
     overflow: hidden;
     z-index: 0; }
-  @keyframes ser2 {
-    from {
-      right: -100%; }
-    to {
-      right: 0; } }
   .servicios .slider-ser .li-ser2 h2,
   .servicios .slider-ser .li-ser3 h2,
   .servicios .slider-ser .li-ser4 h2,
@@ -10368,8 +10339,21 @@ ol {
     position: relative;
     right: 0%;
     background-color: rgba(0, 0, 0, 0.5); }
+  .portafolio .logonav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50%;
+    height: auto;
+    z-index: 9999;
+    cursor: pointer; }
+  .portafolio .st0 {
+    fill: #E8BB00; }
+  .portafolio .st1 {
+    fill: #ffffff; }
   .portafolio {
-    background: url(../images/fondo-portafoliocell1.jpg);
+    background-image: none;
+    background-color: #000000;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -10379,7 +10363,7 @@ ol {
   .portafolio .row {
     margin: 0; }
   .portafolio .porta-contenedor {
-    padding-top: 18rem; }
+    padding-top: 5rem; }
   .porta-div1 .porta-imagen {
     position: relative;
     overflow: hidden; }
@@ -10434,24 +10418,26 @@ ol {
   .porta-div7, .porta-div8,
   .porta-div9, .porta-div10,
   .porta-div11, .porta-div12 {
-    padding: 0;
-    height: auto; }
+    margin: 0.5rem;
+    height: auto;
+    border: 2px solid #ffffff; }
   .porta-div1 .porta-titulo .porta-lengueta {
     position: relative;
     width: 20%;
     height: auto; }
   .portafolio .porta-contenedor h2 {
     position: relative;
-    margin-top: -7rem;
+    margin-top: 0rem;
     margin-bottom: 2rem;
-    margin-left: 4rem;
-    color: #000000;
+    margin-left: 0rem;
+    text-align: center;
+    color: #E8BB00;
     font-size: 4rem;
     font-family: "Agency FB";
     font-weight: 800; }
   .portafolio .porta-contenedor h2 .fa {
     color: #ffffff;
-    font-size: 3rem; }
+    font-size: 2rem; }
   .portafolio .porta-logos {
     padding: 0;
     padding-top: 1rem;
@@ -10466,10 +10452,10 @@ ol {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     max-width: 100%;
     overflow: hidden; }
   .encuentranos .formulario {
@@ -10484,11 +10470,9 @@ ol {
     background-repeat: no-repeat;
     background-size: contain;
     width: 100vw;
-    height: 80vh;
-    color: #ffffff;
-    font-size: 3rem;
+    height: 100vh;
     font-family: "Agency FB";
-    padding-top: 3rem;
+    padding-top: 6rem;
     padding-left: 0;
     padding-right: 0;
     z-index: 5;
@@ -10526,20 +10510,21 @@ ol {
     width: auto;
     font-family: "Agency FB";
     font-weight: light;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #000000;
-    line-height: 2.2rem;
-    padding-left: 3rem;
-    padding-right: 3rem; }
+    line-height: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: left; }
   .encuentranos .encuentranos-iconos li img {
-    width: 1.3rem;
+    width: 1.2rem;
     height: auto;
     margin-right: 1rem; }
   .encuentranos .encuentranos-iconos li .fa {
     margin-right: 1rem; }
   .encuentranos h1 {
     font-family: "Agency FB";
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 3rem;
