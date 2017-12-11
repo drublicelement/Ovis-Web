@@ -1039,7 +1039,7 @@ ol {
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-ovis.jpg);
-    background-position:center;
+    background-position:bottom right;
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -2098,8 +2098,6 @@ display: none;
     padding-bottom: 20px;
     max-width: 100%;
     overflow: hidden;
-    
-
 }
 
 .encuentranos .form-group {
@@ -2904,7 +2902,7 @@ display: none;
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-ovis.jpg);
-    background-position:center;
+    background-position:bottom right;
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -4005,9 +4003,7 @@ display: none;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-@media screen and (max-width: 1600px) and (min-width: 1441px) {
-
-
+@media screen and (max-width: 1600px) and (min-width: 1441px)  {
 
 .bienvenidos .inicio1 h2:after{
      width: 121%;
@@ -4148,8 +4144,6 @@ display: none;
     left: 5%;
     display: flex;
     list-style: none;
-}
-
 }
 //////////////////////////////////////////////////////////
 ///seccion-conocenos1600px////////////////////////////////
@@ -4577,6 +4571,8 @@ ol {
 }
 
 
+
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -5273,7 +5269,7 @@ ol {
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-ovis.jpg);
-    background-position:center;
+    background-position:bottom right;
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -7065,7 +7061,7 @@ display: none;
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-ovis.jpg);
-    background-position:center;
+    background-position:bottom right;
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -8851,7 +8847,7 @@ display: none;
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-ovis.jpg);
-    background-position:center;
+    background-position:bottom right;
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -10691,7 +10687,7 @@ display: none;
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-ovis.jpg);
-    background-position:center;
+    background-position:bottom right;
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -11833,7 +11829,7 @@ display: none;
   position:absolute;
   top:20px;
   right: 30px;
-  z-index:9999;
+  z-index:1;
     border: 0;
     font-size: 2rem;
     margin: 0;
@@ -11855,7 +11851,7 @@ display: none;
     display: none;//ocultar el menu onclick se muestre
     font-family: "Gill Sans MT";
     order:0;
-    background-color:rgba(0,0,0,0.8);
+    background-color:rgba(0,0,0,0.6);
 }
 #menu-principal ul {
     position: relative;
@@ -11866,7 +11862,7 @@ display: none;
     flex-direction: column;
     margin-top:0rem;
     padding-top:7rem;
-    background-color:rgba(0,0,0,0.8);
+    background-color:rgba(0,0,0,0.6);
     text-align: center;
     padding-left: 0;
     line-height: 3rem;
@@ -12668,7 +12664,7 @@ ol {
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-cell-ovis.jpg);
-    background-position:center;
+    background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -14495,7 +14491,7 @@ ol {
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-cell-ovis.jpg);
-    background-position:center;
+    background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover; 
 }

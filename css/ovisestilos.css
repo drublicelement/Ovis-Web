@@ -56,35 +56,27 @@ body {
 
 .encabezado .container {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
 
 .encabezado .container .menu-borde {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   border-radius: 10px;
@@ -108,7 +100,6 @@ body {
   color: #ffffff;
   cursor: pointer;
   -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1; }
 
@@ -119,19 +110,16 @@ body {
   display: none;
   font-family: "Gill Sans MT";
   -webkit-box-ordinal-group: 1;
-  -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0; }
 
 #menu-principal ul {
   font-family: "Gill Sans MT";
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   margin-top: 20px; }
@@ -252,16 +240,13 @@ ol {
   height: 80vh;
   padding-left: 0;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
 
@@ -325,7 +310,6 @@ ol {
   position: relative;
   z-index: 6;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   top: 2rem;
@@ -975,7 +959,7 @@ ol {
   max-width: 100%;
   overflow: hidden;
   background-image: url(../images/fondo-ovis.jpg);
-  background-position: center;
+  background-position: bottom right;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1042,7 +1026,6 @@ ol {
   top: 35%;
   left: 6%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   list-style: none; }
@@ -1444,11 +1427,9 @@ ol {
   font-weight: 100;
   height: 100%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer; }
@@ -1686,7 +1667,6 @@ ol {
 .conocenos .talentos-row {
   position: relative;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   top: 2%;
@@ -1697,7 +1677,6 @@ ol {
 .conocenos .aliados-row {
   position: relative;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   top: 2%;
@@ -1710,11 +1689,9 @@ ol {
   top: 0rem;
   height: 100%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
@@ -1727,11 +1704,9 @@ ol {
   top: 0rem;
   height: 100%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
@@ -1899,7 +1874,6 @@ ol {
 
 .encuentranos .form-group {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding-top: 20px; }
@@ -1952,12 +1926,10 @@ ol {
 
 .encuentranos .encuentranos-iconos {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   font-family: "Agency FB";
@@ -2026,7 +1998,6 @@ ol {
     position: relative;
     z-index: 6;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 2rem;
@@ -2597,7 +2568,7 @@ ol {
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-ovis.jpg);
-    background-position: center;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover; }
   .ovis .row {
@@ -2639,7 +2610,6 @@ ol {
     top: 35%;
     left: 5%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     list-style: none; }
@@ -3000,11 +2970,9 @@ ol {
     font-weight: 100;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer; }
@@ -3192,7 +3160,6 @@ ol {
   .conocenos .talentos-row {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 2%;
@@ -3202,7 +3169,6 @@ ol {
   .conocenos .aliados-row {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 2%;
@@ -3214,11 +3180,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -3230,11 +3194,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -3353,7 +3315,6 @@ ol {
     overflow: hidden; }
   .encuentranos .form-group {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     padding-top: 20px; }
@@ -3399,16 +3360,13 @@ ol {
     background-color: #ffffff; }
   .encuentranos .encuentranos-iconos {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: left;
-    -webkit-justify-content: left;
     -ms-flex-pack: left;
     justify-content: left;
     font-family: "Agency FB";
@@ -3557,392 +3515,332 @@ ol {
     top: 42%;
     left: 5%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    list-style: none; } }
-
-.conocenos {
-  background: url(../images/fondo-conocenos.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden; }
-
-.conocenos .slideshow-co {
-  position: relative;
-  width: 100%; }
-
-.conocenos ul,
-ol {
-  list-style: none; }
-
-.slideshow-co .slider-co li img {
-  max-width: 100%;
-  width: 100vw;
-  height: auto; }
-
-.slideshow-co .slider-co {
-  padding-top: 9%;
-  width: 100vw;
-  height: 100vh; }
-
-.slideshow-co .slider-co li {
-  width: 100%;
-  height: 100%; }
-
-.slideshow-co .slider-co li img {
-  width: 100%;
-  height: auto;
-  position: relative;
-  top: 0%;
-  z-index: 1; }
-
-.conocenos .talentos-row .talentos1 {
-  width: 50%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  margin-left: 0rem;
-  margin-top: -7rem;
-  text-align: center0 0.5; }
-
-.conocenos .talentos-row .talentos2 {
-  width: 50%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  text-align: center; }
-
-.conocenos .talentos-row .talentos3 {
-  width: 50%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  text-align: center; }
-
-.conocenos .talentos-row .talentos4 {
-  width: 50%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  margin-left: 0rem;
-  margin-top: -7rem;
-  text-align: center; }
-
-.conocenos .talentos-row .talentos5 {
-  width: 50%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  margin-left: 0rem;
-  margin-top: -7rem;
-  text-align: center; }
-
-.conocenos .talentos-row .talentos1 h6,
-.conocenos .talentos-row .talentos2 h6 {
-  font-family: "Agency FB";
-  font-weight: 800;
-  font-size: 1.2rem;
-  color: #000000; }
-
-.conocenos .talentos-row .talentos3 h6,
-.conocenos .talentos-row .talentos4 h6,
-.conocenos .talentos-row .talentos5 h6 {
-  font-family: "Agency FB";
-  font-weight: 800;
-  font-size: 1.2rem;
-  color: #000000; }
-
-.conocenos .talentos-row .talentos1 h4 .fa,
-.conocenos .talentos-row .talentos2 h4 .fa,
-.conocenos .talentos-row .talentos4 h4 .fa,
-.conocenos .talentos-row .talentos5 h4 .fa,
-.conocenos .talentos-row .talentos3 h4 .fa {
-  color: #000000; }
-
-.conocenos .aliados-row .aliados1 h4 .fa,
-.conocenos .aliados-row .aliados2 h4 .fa,
-.conocenos .aliados-row .aliados3 h4 .fa,
-.conocenos .aliados-row .aliados6 h4 .fa,
-.conocenos .aliados-row .aliados7 h4 .fa,
-.conocenos .aliados-row .aliados4 h4 .fa,
-.conocenos .aliados-row .aliados5 h4 .fa {
-  color: #000000; }
-
-.conocenos .talentos-row p {
-  color: #000000;
-  font-weight: 200;
-  line-height: 1.2rem; }
-
-.conocenos .aliados-row p {
-  color: #000000;
-  font-weight: 200;
-  line-height: 1.2rem; }
-
-.conocenos .aliados-row .aliados1 {
-  width: 50%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  text-align: center; }
-
-.conocenos .aliados-row .aliados2 {
-  width: 50%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  margin-left: 0rem;
-  margin-top: -7rem;
-  text-align: center; }
-
-.conocenos .aliados-row .aliados3 {
-  width: 50%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  margin-left: 0rem;
-  margin-top: -7rem;
-  text-align: center; }
-
-.conocenos .aliados-row .aliados4 {
-  width: 50%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  text-align: center; }
-
-.conocenos .aliados-row .aliados5 {
-  width: 50%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  text-align: center; }
-
-.conocenos .aliados-row .aliados6 {
-  width: 20%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  text-align: center; }
-
-.conocenos .aliados-row .aliados7 {
-  display: none;
-  width: 20%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  margin-left: 0rem;
-  margin-top: -7rem;
-  text-align: center; }
-
-.conocenos .aliados-row .aliados1 h6,
-.conocenos .aliados-row .aliados2 h6,
-.conocenos .aliados-row .aliados3 h6,
-.conocenos .aliados-row .aliados6 h6,
-.conocenos .aliados-row .aliados7 h6,
-.conocenos .aliados-row .aliados4 h6,
-.conocenos .aliados-row .aliados5 h6 {
-  font-family: "Agency FB";
-  font-weight: 800;
-  font-size: 1.2rem;
-  color: #000000; }
-
-.conocenos .talentos-row h4 {
-  font-family: "Agency FB";
-  font-weight: 800;
-  font-size: 1.8rem; }
-
-.conocenos .aliados-row h4 {
-  font-family: "Agency FB";
-  font-weight: 800;
-  font-size: 1.8rem; }
-
-.conocenos .talentos-row {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  top: 2%;
-  padding-left: 9rem;
-  padding-right: 9rem;
-  z-index: 2; }
-
-.conocenos .aliados-row {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  top: 2%;
-  padding-left: 9rem;
-  padding-right: 9rem;
-  z-index: 2; }
-
-.left-co {
-  position: absolute;
-  top: 0rem;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  width: 5%;
-  left: 0px;
-  z-index: 5; }
-
-.right-co {
-  position: absolute;
-  top: 0rem;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  width: 5%;
-  right: 0px;
-  z-index: 5; }
-
-.left-co img {
-  position: relative;
-  left: 45%;
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.right-co img {
-  position: relative;
-  right: 0%;
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.encuentranos {
-  background-image: url(../images/fondo-encuentranos.jpg);
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 20px;
-  max-width: 100%;
-  overflow: hidden; }
-
-.encuentranos .form-group {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 20px; }
-
-.encuentranos .form-group input,
-.encuentranos .form-group textarea {
-  width: 30rem;
-  margin-left: 6rem; }
-
-.encuentranos .form-group label {
-  width: 20px; }
-
-.encuentranos .formulario {
-  position: relative;
-  padding-top: 9rem;
-  font-size: 1.6rem;
-  color: #ffffff;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  z-index: 5; }
-
-.encuentranos .encuentranos1 {
-  position: relative;
-  background: url(../images/encuentranos-flecha.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 70vw;
-  height: 80vh;
-  color: #ffffff;
-  font-size: 3rem;
-  font-family: "Agency FB";
-  padding-top: 10rem;
-  z-index: 5; }
-
-.encuentranos .btn-primary {
-  color: #000000;
-  font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
-  font-weight: 600;
-  margin-left: 50%;
-  margin-top: 2rem;
-  background-color: #E8BB00;
-  border-color: transparent;
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-  cursor: pointer; }
-
-.encuentranos .btn-primary:hover {
-  background-color: #ffffff; }
-
-.encuentranos .encuentranos-iconos {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: left;
-  -webkit-justify-content: left;
-  -ms-flex-pack: left;
-  justify-content: left;
-  font-family: "Agency FB";
-  padding-left: 0; }
-
-.encuentranos .encuentranos-iconos li {
-  width: auto;
-  font-family: "Agency FB";
-  font-weight: light;
-  font-size: 1.6rem;
-  color: #000000;
-  line-height: 2.2rem;
-  padding-left: 3rem;
-  padding-right: 3rem; }
-
-.encuentranos .encuentranos-iconos li img {
-  width: 1.7rem;
-  height: auto;
-  margin-right: 1rem; }
-
-.encuentranos .encuentranos-iconos li .fa {
-  margin-right: 1rem; }
-
-.encuentranos h1 {
-  font-family: "Agency FB";
-  font-size: 4rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 3rem; }
-
-.encuentranos .encuentranos-iconos a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #000000;
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
-
-.encuentranos .encuentranos-iconos a:hover {
-  color: #ffffff; }
+    list-style: none; }
+  .conocenos {
+    background: url(../images/fondo-conocenos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; }
+  .conocenos .slideshow-co {
+    position: relative;
+    width: 100%; }
+  .conocenos ul,
+  ol {
+    list-style: none; }
+  .slideshow-co .slider-co li img {
+    max-width: 100%;
+    width: 100vw;
+    height: auto; }
+  .slideshow-co .slider-co {
+    padding-top: 9%;
+    width: 100vw;
+    height: 100vh; }
+  .slideshow-co .slider-co li {
+    width: 100%;
+    height: 100%; }
+  .slideshow-co .slider-co li img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0%;
+    z-index: 1; }
+  .conocenos .talentos-row .talentos1 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    margin-left: 0rem;
+    margin-top: -7rem;
+    text-align: center0 0.5; }
+  .conocenos .talentos-row .talentos2 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    text-align: center; }
+  .conocenos .talentos-row .talentos3 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    text-align: center; }
+  .conocenos .talentos-row .talentos4 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    margin-left: 0rem;
+    margin-top: -7rem;
+    text-align: center; }
+  .conocenos .talentos-row .talentos5 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    margin-left: 0rem;
+    margin-top: -7rem;
+    text-align: center; }
+  .conocenos .talentos-row .talentos1 h6,
+  .conocenos .talentos-row .talentos2 h6 {
+    font-family: "Agency FB";
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #000000; }
+  .conocenos .talentos-row .talentos3 h6,
+  .conocenos .talentos-row .talentos4 h6,
+  .conocenos .talentos-row .talentos5 h6 {
+    font-family: "Agency FB";
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #000000; }
+  .conocenos .talentos-row .talentos1 h4 .fa,
+  .conocenos .talentos-row .talentos2 h4 .fa,
+  .conocenos .talentos-row .talentos4 h4 .fa,
+  .conocenos .talentos-row .talentos5 h4 .fa,
+  .conocenos .talentos-row .talentos3 h4 .fa {
+    color: #000000; }
+  .conocenos .aliados-row .aliados1 h4 .fa,
+  .conocenos .aliados-row .aliados2 h4 .fa,
+  .conocenos .aliados-row .aliados3 h4 .fa,
+  .conocenos .aliados-row .aliados6 h4 .fa,
+  .conocenos .aliados-row .aliados7 h4 .fa,
+  .conocenos .aliados-row .aliados4 h4 .fa,
+  .conocenos .aliados-row .aliados5 h4 .fa {
+    color: #000000; }
+  .conocenos .talentos-row p {
+    color: #000000;
+    font-weight: 200;
+    line-height: 1.2rem; }
+  .conocenos .aliados-row p {
+    color: #000000;
+    font-weight: 200;
+    line-height: 1.2rem; }
+  .conocenos .aliados-row .aliados1 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    text-align: center; }
+  .conocenos .aliados-row .aliados2 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    margin-left: 0rem;
+    margin-top: -7rem;
+    text-align: center; }
+  .conocenos .aliados-row .aliados3 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    margin-left: 0rem;
+    margin-top: -7rem;
+    text-align: center; }
+  .conocenos .aliados-row .aliados4 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    text-align: center; }
+  .conocenos .aliados-row .aliados5 {
+    width: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    text-align: center; }
+  .conocenos .aliados-row .aliados6 {
+    width: 20%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    text-align: center; }
+  .conocenos .aliados-row .aliados7 {
+    display: none;
+    width: 20%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    margin-left: 0rem;
+    margin-top: -7rem;
+    text-align: center; }
+  .conocenos .aliados-row .aliados1 h6,
+  .conocenos .aliados-row .aliados2 h6,
+  .conocenos .aliados-row .aliados3 h6,
+  .conocenos .aliados-row .aliados6 h6,
+  .conocenos .aliados-row .aliados7 h6,
+  .conocenos .aliados-row .aliados4 h6,
+  .conocenos .aliados-row .aliados5 h6 {
+    font-family: "Agency FB";
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #000000; }
+  .conocenos .talentos-row h4 {
+    font-family: "Agency FB";
+    font-weight: 800;
+    font-size: 1.8rem; }
+  .conocenos .aliados-row h4 {
+    font-family: "Agency FB";
+    font-weight: 800;
+    font-size: 1.8rem; }
+  .conocenos .talentos-row {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 2%;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    z-index: 2; }
+  .conocenos .aliados-row {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 2%;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    z-index: 2; }
+  .left-co {
+    position: absolute;
+    top: 0rem;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    width: 5%;
+    left: 0px;
+    z-index: 5; }
+  .right-co {
+    position: absolute;
+    top: 0rem;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    width: 5%;
+    right: 0px;
+    z-index: 5; }
+  .left-co img {
+    position: relative;
+    left: 45%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .right-co img {
+    position: relative;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .encuentranos {
+    background-image: url(../images/fondo-encuentranos.jpg);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+    max-width: 100%;
+    overflow: hidden; }
+  .encuentranos .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 20px; }
+  .encuentranos .form-group input,
+  .encuentranos .form-group textarea {
+    width: 30rem;
+    margin-left: 6rem; }
+  .encuentranos .form-group label {
+    width: 20px; }
+  .encuentranos .formulario {
+    position: relative;
+    padding-top: 9rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    z-index: 5; }
+  .encuentranos .encuentranos1 {
+    position: relative;
+    background: url(../images/encuentranos-flecha.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70vw;
+    height: 80vh;
+    color: #ffffff;
+    font-size: 3rem;
+    font-family: "Agency FB";
+    padding-top: 10rem;
+    z-index: 5; }
+  .encuentranos .btn-primary {
+    color: #000000;
+    font-family: "Helvetica LT Std",'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    margin-left: 50%;
+    margin-top: 2rem;
+    background-color: #E8BB00;
+    border-color: transparent;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer; }
+  .encuentranos .btn-primary:hover {
+    background-color: #ffffff; }
+  .encuentranos .encuentranos-iconos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    font-family: "Agency FB";
+    padding-left: 0; }
+  .encuentranos .encuentranos-iconos li {
+    width: auto;
+    font-family: "Agency FB";
+    font-weight: light;
+    font-size: 1.6rem;
+    color: #000000;
+    line-height: 2.2rem;
+    padding-left: 3rem;
+    padding-right: 3rem; }
+  .encuentranos .encuentranos-iconos li img {
+    width: 1.7rem;
+    height: auto;
+    margin-right: 1rem; }
+  .encuentranos .encuentranos-iconos li .fa {
+    margin-right: 1rem; }
+  .encuentranos h1 {
+    font-family: "Agency FB";
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem; }
+  .encuentranos .encuentranos-iconos a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+  .encuentranos .encuentranos-iconos a:hover {
+    color: #ffffff; } }
 
 @media screen and (max-width: 1440px) and (min-width: 1367px) {
   .bienvenidos .inicio1 h1 {
@@ -3971,7 +3869,6 @@ ol {
     position: relative;
     z-index: 6;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 2rem;
@@ -4542,7 +4439,7 @@ ol {
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-ovis.jpg);
-    background-position: center;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover; }
   .ovis .row {
@@ -4584,7 +4481,6 @@ ol {
     top: 32%;
     left: 5%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     list-style: none; }
@@ -4945,11 +4841,9 @@ ol {
     font-weight: 100;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer; }
@@ -5137,7 +5031,6 @@ ol {
   .conocenos .talentos-row {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 2%;
@@ -5147,7 +5040,6 @@ ol {
   .conocenos .aliados-row {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 2%;
@@ -5159,11 +5051,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -5175,11 +5065,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -5298,7 +5186,6 @@ ol {
     overflow: hidden; }
   .encuentranos .form-group {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     padding-top: 20px; }
@@ -5344,16 +5231,13 @@ ol {
     background-color: #ffffff; }
   .encuentranos .encuentranos-iconos {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: left;
-    -webkit-justify-content: left;
     -ms-flex-pack: left;
     justify-content: left;
     font-family: "Agency FB";
@@ -5416,7 +5300,6 @@ ol {
     position: relative;
     z-index: 6;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 2rem;
@@ -5987,7 +5870,7 @@ ol {
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-ovis.jpg);
-    background-position: center;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover; }
   .ovis .row {
@@ -6029,7 +5912,6 @@ ol {
     top: 33%;
     left: 4%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     list-style: none; }
@@ -6390,11 +6272,9 @@ ol {
     font-weight: 100;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer; }
@@ -6580,7 +6460,6 @@ ol {
   .conocenos .talentos-row {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 2%;
@@ -6590,7 +6469,6 @@ ol {
   .conocenos .aliados-row {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 2%;
@@ -6602,11 +6480,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -6618,11 +6494,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -6741,7 +6615,6 @@ ol {
     overflow: hidden; }
   .encuentranos .form-group {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     padding-top: 0px; }
@@ -6787,16 +6660,13 @@ ol {
     background-color: #ffffff; }
   .encuentranos .encuentranos-iconos {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: left;
-    -webkit-justify-content: left;
     -ms-flex-pack: left;
     justify-content: left;
     font-family: "Agency FB";
@@ -6859,7 +6729,6 @@ ol {
     position: relative;
     z-index: 6;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 2rem;
@@ -7430,7 +7299,7 @@ ol {
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-ovis.jpg);
-    background-position: center;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover; }
   .ovis .row {
@@ -7472,7 +7341,6 @@ ol {
     top: 29%;
     left: 5.5%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     list-style: none; }
@@ -7833,11 +7701,9 @@ ol {
     font-weight: 100;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer; }
@@ -8023,7 +7889,6 @@ ol {
   .conocenos .talentos-row {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 1%;
@@ -8033,7 +7898,6 @@ ol {
   .conocenos .aliados-row {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 1%;
@@ -8045,11 +7909,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -8061,11 +7923,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -8184,7 +8044,6 @@ ol {
     overflow: hidden; }
   .encuentranos .form-group {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     padding-top: 0px; }
@@ -8230,16 +8089,13 @@ ol {
     background-color: #ffffff; }
   .encuentranos .encuentranos-iconos {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: left;
-    -webkit-justify-content: left;
     -ms-flex-pack: left;
     justify-content: left;
     font-family: "Agency FB";
@@ -8300,12 +8156,10 @@ ol {
   #menu-principal ul {
     font-family: "Gill Sans MT";
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     margin-top: 20px; }
@@ -8345,7 +8199,6 @@ ol {
     position: relative;
     z-index: 6;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 2rem;
@@ -8920,7 +8773,7 @@ ol {
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-ovis.jpg);
-    background-position: center;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover; }
   .ovis .row {
@@ -8962,7 +8815,6 @@ ol {
     top: 22%;
     left: 5%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     list-style: none; }
@@ -9323,11 +9175,9 @@ ol {
     font-weight: 100;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer; }
@@ -9513,7 +9363,6 @@ ol {
   .conocenos .talentos-row {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 1%;
@@ -9523,7 +9372,6 @@ ol {
   .conocenos .aliados-row {
     position: relative;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 1%;
@@ -9535,11 +9383,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -9551,11 +9397,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -9674,7 +9518,6 @@ ol {
     overflow: hidden; }
   .encuentranos .form-group {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     padding-top: 0px; }
@@ -9720,16 +9563,13 @@ ol {
     background-color: #ffffff; }
   .encuentranos .encuentranos-iconos {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: left;
-    -webkit-justify-content: left;
     -ms-flex-pack: left;
     justify-content: left;
     font-family: "Agency FB";
@@ -9778,31 +9618,24 @@ ol {
     padding-right: 0%;
     margin: 0;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap; }
   .encabezado .container .menu-borde {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     border-radius: 0px;
@@ -9817,7 +9650,7 @@ ol {
     position: absolute;
     top: 20px;
     right: 30px;
-    z-index: 9999;
+    z-index: 1;
     border: 0;
     font-size: 2rem;
     margin: 0;
@@ -9829,7 +9662,6 @@ ol {
     color: #ffffff;
     cursor: pointer;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1; }
   .boton-menu:focus {
@@ -9840,27 +9672,24 @@ ol {
     display: none;
     font-family: "Gill Sans MT";
     -webkit-box-ordinal-group: 1;
-    -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0;
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: rgba(0, 0, 0, 0.6); }
   #menu-principal ul {
     position: relative;
     width: 100vw;
     height: 100vh;
     font-family: "Gill Sans MT";
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 0rem;
     padding-top: 7rem;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
     padding-left: 0;
     line-height: 3rem;
@@ -9978,12 +9807,10 @@ ol {
     padding-left: 0;
     padding-right: 0;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
   .bienvenidos .inicio1:after {
@@ -10020,7 +9847,6 @@ ol {
   .bienvenidos .inicio1 .ini-iconos {
     z-index: 6;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 0rem;
@@ -10031,7 +9857,6 @@ ol {
     padding-right: 0;
     height: auto;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
   .bienvenidos .inicio1 .ini-iconos li img {
@@ -10534,7 +10359,7 @@ ol {
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-cell-ovis.jpg);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover; }
   .ovis .row {
@@ -10918,11 +10743,9 @@ ol {
     font-weight: 100;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer; }
@@ -11019,11 +10842,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -11035,11 +10856,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -11226,16 +11045,13 @@ ol {
     background-color: #ffffff; }
   .encuentranos .encuentranos-iconos {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: left;
-    -webkit-justify-content: left;
     -ms-flex-pack: left;
     justify-content: left;
     font-family: "Agency FB";
@@ -11286,31 +11102,24 @@ ol {
     padding-right: 0%;
     margin: 0;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap; }
   .encabezado .container .menu-borde {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     border-radius: 0px;
@@ -11334,7 +11143,6 @@ ol {
     color: #ffffff;
     cursor: pointer;
     -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1; }
   .boton-menu:focus {
@@ -11343,7 +11151,6 @@ ol {
     display: none;
     font-family: "Gill Sans MT";
     -webkit-box-ordinal-group: 1;
-    -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0; }
   #menu-principal ul {
@@ -11352,12 +11159,10 @@ ol {
     height: 100vh;
     font-family: "Gill Sans MT";
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 0rem;
@@ -11473,12 +11278,10 @@ ol {
     padding-left: 0;
     padding-right: 0;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: red; }
@@ -11516,7 +11319,6 @@ ol {
   .bienvenidos .inicio1 .ini-iconos {
     z-index: 6;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     top: 0rem;
@@ -11527,7 +11329,6 @@ ol {
     padding-right: 0;
     height: auto;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
   .bienvenidos .inicio1 .ini-iconos li img {
@@ -12026,7 +11827,7 @@ ol {
     max-width: 100%;
     overflow: hidden;
     background-image: url(../images/fondo-cell-ovis.jpg);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover; }
   .ovis .row {
@@ -12406,11 +12207,9 @@ ol {
     font-weight: 100;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer; }
@@ -12507,11 +12306,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -12523,11 +12320,9 @@ ol {
     top: 0rem;
     height: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
@@ -12709,16 +12504,13 @@ ol {
     background-color: #ffffff; }
   .encuentranos .encuentranos-iconos {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: left;
-    -webkit-justify-content: left;
     -ms-flex-pack: left;
     justify-content: left;
     font-family: "Agency FB";
