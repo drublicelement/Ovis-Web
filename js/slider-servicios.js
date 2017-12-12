@@ -91,13 +91,16 @@ $(document).ready(function(){
         if( imgPos >= imgItems){
             
              imgPos = 1;
+            $(".st0").css({'fill': '#000000'});
+            $(".st1").css({'fill': '#ffffff'});
         }else{
                 
                 imgPos++;
-           
+            $(".st0").css({'fill': '#000000'});
+            $(".st1").css({'fill': '#E8BB00'});
         }
         
-         $(".st1").addClass("st5");
+        
           $('.paginacion-ser li').removeClass("active");
          $('.paginacion-ser li').css({'background-color': '#000000'});
           $('.paginacion-ser li:nth-child('+ imgPos +')').addClass("active");

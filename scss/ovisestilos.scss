@@ -13,6 +13,7 @@ $nav:#E9BC00;
 $linea:#ffffff;
 
 
+
 /////////////////////////////////////////////////
 ////////////fuentes de la pagina/////////////
 ////////////////////////////////////////////
@@ -58,7 +59,6 @@ $linea:#ffffff;
     font-weight:100;
     src: url('../fonts/HELVETICA.ttf') format('truetype');
 }
-
 
 
 * {
@@ -1051,7 +1051,7 @@ ol {
 
 .ovis .ovis-divs {
 
-    padding-top: 18%;
+    padding-top: 12%;
 }
 
 .ovis h2 .titulo-amarillo {
@@ -1105,7 +1105,7 @@ ol {
     fill:#000000;
 }
 .servicios .st1{
-    fill:#000000;
+    fill:#ffffff;
 }
 .servicios {
     min-width: 100%;
@@ -1651,7 +1651,7 @@ ol {
 }
 
 .slideshow-co .slider-co {
-  padding-top:10%;
+  padding-top:6%;
     width: 100vw;
     height: 100vh;
 }
@@ -2025,9 +2025,7 @@ ol {
     height: auto;
   }
 .porta-div1 .porta-titulo .porta-lengueta{
-    position: relative;
-    width: 20%;
-    height: auto;   
+    display: none;  
 }
 .portafolio .porta-contenedor h2{
   position:relative;
@@ -3833,9 +3831,7 @@ ol {
     height: auto;
   }
 .porta-div1 .porta-titulo .porta-lengueta{
-    position: relative;
-    width: 20%;
-    height: auto;   
+    display: none;   
 }
 .portafolio .porta-contenedor h2{
   position:relative;
@@ -6201,9 +6197,7 @@ ol {
     height: auto;
   }
 .porta-div1 .porta-titulo .porta-lengueta{
-    position: relative;
-    width: 20%;
-    height: auto;   
+    display: none;   
 }
 .portafolio .porta-contenedor h2{
   position:relative;
@@ -7308,7 +7302,7 @@ display: none;
 .servicios .slider-ser .li-ser5 .ser5,
 .servicios .slider-ser .li-ser6 .ser6,
 .servicios .slider-ser .li-ser7 .ser7, {
-    padding-top: 23%;
+    padding-top: 20%;
     height: 100%;
     overflow: hidden;
 }
@@ -7740,14 +7734,14 @@ ol {
     color: #000000;
     font-weight: 200;
     line-height:1.1rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .conocenos .aliados-row p {
     color: #000000;
     font-weight: 200;
     line-height:1.1rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 
@@ -7988,9 +7982,7 @@ ol {
     height: auto;
   }
 .porta-div1 .porta-titulo .porta-lengueta{
-    position: relative;
-    width: 20%;
-    height: auto;   
+    display: none;   
 }
 .portafolio .porta-contenedor h2{
   position:relative;
@@ -9774,9 +9766,7 @@ ol {
     height: auto;
   }
 .porta-div1 .porta-titulo .porta-lengueta{
-    position: relative;
-    width: 20%;
-    height: auto;   
+    display: none;   
 }
 .portafolio .porta-contenedor h2{
   position:relative;
@@ -11614,9 +11604,7 @@ ol {
     height: auto;
   }
 .porta-div1 .porta-titulo .porta-lengueta{
-    position: relative;
-    width: 20%;
-    height: auto;   
+    display: none;  
 }
 .portafolio .porta-contenedor h2{
   position:relative;
@@ -11865,7 +11853,7 @@ display: none;
     background-color:rgba(0,0,0,0.6);
     text-align: center;
     padding-left: 0;
-    line-height: 3rem;
+    line-height: 4rem;
     z-index: 1;
      
 }
@@ -12730,7 +12718,7 @@ ol {
 }
 
     .servicios  .st0{
-    fill:$general;
+    fill:#000000;
 }
     .servicios  .st1{
     fill:#ffffff;
@@ -15261,9 +15249,7 @@ ol {
 
   }
 .porta-div1 .porta-titulo .porta-lengueta{
-    position: relative;
-    width: 20%;
-    height: auto;   
+    display: none;  
 }
 .portafolio .porta-contenedor h2{
   position:relative;
